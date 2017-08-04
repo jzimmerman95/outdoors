@@ -374,7 +374,8 @@ box:after {
   font-size: 0;
 }
 
-.activity-wrapper {
+.activity-wrapper,
+.trip-wrapper {
   width: 32%;
   display: inline-block;
   margin-right: 2%;
@@ -383,7 +384,16 @@ box:after {
   vertical-align: top;
 }
 
-.activity-wrapper:nth-child(3n) {
+.trip-wrapper {
+  position: relative;
+}
+
+.trip-img-holder {
+  height: 300px;
+}
+
+.activity-wrapper:nth-child(3n),
+.trip-wrapper:nth-child(3n) {
   margin-right: 0;
 }
 
@@ -394,7 +404,8 @@ box:after {
   font-size: 0;
 }
 
-.img-holder:after {
+.img-holder:after,
+.trip-img-holder:after {
   content: '';
   position: absolute;
   width: 100%; 
@@ -405,6 +416,10 @@ box:after {
   opacity: 0;
   transition: all 0.5s;
   -webkit-transition: all 0.5s;
+}
+
+.trip-wrapper a {
+  text-decoration: none;
 }
 
 .img-holder h1 {
@@ -418,11 +433,36 @@ box:after {
   pointer-events: none;
 }
 
-.img-holder:hover:after {
+.trip-img-holder h1 {
+  color: white;
+  position: relative;
+  z-index: 1000;
+  font-size: 30px;
+  font-family: GothamBold;
+  pointer-events: none;
+  padding: 30px 0 0 30px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+}
+
+.trip-img-holder h3 {
+  position: absolute;
+  color: white;
+  z-index: 1000;
+  font-size: 16px;
+  font-family: GothamBold;
+  pointer-events: none;
+  bottom: 20px;
+  right: 20px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+}
+
+.img-holder:hover:after,
+.trip-img-holder:hover:after {
   opacity: 1;
 }
 
-.img-holder:hover {
+.img-holder:hover,
+.trip-img-holder:hover {
   cursor: pointer;
 }
 
@@ -574,6 +614,16 @@ box:after {
   font-size: 14px !important;
 }
 
+.create-a-trip-form select {
+  height: 40px !important;
+  margin: 0;
+  padding-left: 10px;
+  font-size: 14px !important;
+  margin-top: 10px;
+  width: calc(100% - 10px) !important;
+  background-color: white;
+}
+
 .rmrow {
   padding: 0;
   min-height: 40px !important;
@@ -618,8 +668,6 @@ box:after {
   top: 0;
   z-index: -1;
 }
-
-
 
 
 
@@ -820,7 +868,8 @@ input[name="name"] {
 }
 
 .contact-form input,
-.create-a-trip-form input {
+.create-a-trip-form input,
+.create-a-trip-form select {
   height: 30px;
   border: 1px solid #343434;
 }
@@ -1025,8 +1074,7 @@ input[type="submit"] {
   border: 2px solid #44b749;
 }
 
-<<<<<<< HEAD
-=======
+
 /* SINGLE TRIP PAGE */
 /* ----------------------------------------- */
 
@@ -1117,7 +1165,8 @@ input[type="submit"] {
 }
 
 .trip-detail {
-  padding: 7.5px 30px 7.5px 30px;
+  padding: 5px 30px 5px 30px;
+  line-height: 25px;
 }
 
 .trip-detail:last-child {
@@ -1126,6 +1175,8 @@ input[type="submit"] {
 
 .trip-overview {
   padding: 0 30px;
+  line-height: 25px;
+  margin-bottom: 30px;
 }
 
 .trip-attendees {
@@ -1160,6 +1211,7 @@ table td {
   background-size: cover;
   width: 100%;
   height: 500px;
+  min-height: 500px;
   position: relative;
   top: 0;
   z-index: -1;
@@ -1176,11 +1228,6 @@ table td {
 
 
 
-
-
-
-
->>>>>>> a8f942f211898a50cb3660e39caa7057dec37f5f
 
 
 
