@@ -8,12 +8,7 @@
  */
 
 get_header(); ?>
-<<<<<<< HEAD
 
-	<?php get_template_part( 'loop', 'single' ); ?>
-
-<?php get_sidebar(); ?>
-=======
 	<nav class="menu-internal-menu-container">
 		<ul id="menu-internal-menu" class="menu">
 			<li id="menu-item-140" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-140"><a href="http://localhost/outdoors/" class="menu-image-title-hide menu-image-not-hovered"><span class="menu-image-title">Home</span><img width="300" height="236" src="http://localhost/outdoors/wp-content/uploads/greenodclogo-300x236.png" class="menu-image menu-image-title-hide" alt="" srcset="http://localhost/outdoors/wp-content/uploads/greenodclogo-300x236.png 300w, http://localhost/outdoors/wp-content/uploads/greenodclogo-768x605.png 768w, http://localhost/outdoors/wp-content/uploads/greenodclogo-1024x806.png 1024w, http://localhost/outdoors/wp-content/uploads/greenodclogo-24x19.png 24w, http://localhost/outdoors/wp-content/uploads/greenodclogo-36x28.png 36w, http://localhost/outdoors/wp-content/uploads/greenodclogo-48x38.png 48w, http://localhost/outdoors/wp-content/uploads/greenodclogo.png 1529w" sizes="(max-width: 300px) 100vw, 300px"></a></li>
@@ -27,5 +22,4 @@ get_header(); ?>
 
 	<?php get_template_part( 'loop', 'single' ); ?>
 
->>>>>>> a8f942f211898a50cb3660e39caa7057dec37f5f
 <?php get_footer(); ?>
