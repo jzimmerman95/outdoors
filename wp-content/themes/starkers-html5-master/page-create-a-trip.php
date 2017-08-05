@@ -16,9 +16,24 @@ get_header(); ?>
 <img class="form-logo" src="/outdoors/wp-content/uploads/formlogo.png" />
 
 <div class="form-wrapper">
-  <form class="create-a-trip-form" method="post" action="submit-create-trip-form.php">
-    <div class="input-title">Trip Title</div>
-    <input class="title-input" type="text" name="title" required><br>
+  <form class="create-a-trip-form" method="post" action="/outdoors/wp-content/themes/starkers-html5-master/submit-create-trip-form.php">
+    <div class="two_input_section">
+      <div class="input-title">Trip Title</div>
+      <input class="first_input" type="text" name="title" required><br>
+    </div><div class="two_input_section">
+      <div class="input-title">Trip Category</div>
+      <select class="input-title" type="text" name="trip_category" required>
+        <option value="rock_climbing">Rock Climbing</option>
+        <option value="watersports">Water Sports</option>
+        <option value="hiking">Hiking / Backpacking</option>
+        <option value="caving">Caving</option>
+        <option value="volunteering">Volunteering</option>
+        <option value="horseback_riding">Horseback Riding</option>
+        <option value="snowsports">Snow Sports</option>
+        <option value="biking">Biking</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
 
     <div class="two_input_section">
       <div class="input-title">Trip Destination</div>
