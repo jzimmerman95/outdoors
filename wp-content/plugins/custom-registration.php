@@ -56,11 +56,13 @@ function cr_sanitize(&$fields) {
   $fields['last_name']    =  isset($fields['last_name'])   ? sanitize_text_field($fields['last_name']) : '';
   $fields['gender']       =   isset($fields['gender'])   ? sanitize_text_field($fields['gender']) : '';
   $fields['birthday']     =   isset($fields['birthday'])   ? sanitize_text_field($fields['birthday']) : '';
+  $fields['phone_number']     =   isset($fields['phone_number'])   ? sanitize_text_field($fields['phone_number']) : '';
 }
 
 function insert_user_meta($user_id, $fields) {
   update_user_meta( $user_id, 'gender', $fields['gender'] );
   update_user_meta( $user_id, 'birthday', $fields['birthday'] );
+  update_user_meta( $user_id, 'phone_number', $fields['phone_number'] );
   update_user_meta( $user_id, 'user_paid', '0');
   update_user_meta( $user_id, 'waiver_signed', '0');
 }
@@ -118,6 +120,10 @@ function cr_display_form($fields = array(), $errors = null) {
         <br>
     </div>
 
+    <div>
+      <label for="lastname">Phone</label>
+      <input type="text" name="phone_number" value="<?php echo (isset($fields['phone_number']) ? $fields['phone_number'] : '') ?>">
+    </div>
             
     <input type="submit" name="submit" value="Register">
     </form><?php
@@ -134,6 +140,7 @@ function cr_get_fields() {
     'last_name'    =>  isset($_POST['last_name'])    ?  $_POST['last_name']        :  '',
     'gender'       => isset($_POST['gender']) ? $_POST['gender'] : '',
     'birthday'       => isset($_POST['birthday']) ? $_POST['birthday'] : '',
+    'phone_number'    =>  isset($_POST['phone_number'])    ?  $_POST['phone_number']        :  '',
   );
 }
 
