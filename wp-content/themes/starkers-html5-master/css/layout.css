@@ -1115,7 +1115,7 @@ input[type="submit"] {
   border: 2px solid black;
 }
 
-.join-trip {
+.join-trip, .leave-trip {
   width: 90%;
   text-transform: uppercase;
   background-color: #44b749;
@@ -1129,12 +1129,22 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-.join-trip:hover {
+.leave-trip {
+  background-color: #b73c3c;
+}
+
+.join-trip:hover,
+.leave-trip:hover {
   background-color: white;
   color: #44b749;
   height: 46px;
   width: calc(90%-4px);
   border: 2px solid #44b749;
+}
+
+.leave-trip:hover {
+  color: #b73c3c;
+  border: 2px solid #b73c3c;
 }
 
 .trip-details {
