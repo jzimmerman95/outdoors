@@ -69,6 +69,7 @@ get_header();?>
 			-o-background-size: cover;
 			background-size: cover;">
 			<h1><?php echo $trip_title; ?></h1>
+			<h2><img class="location-logo" src="/outdoors/wp-content/uploads/location-white.png"/><?php echo types_render_field("trip-location", array());?></h2>
 			<h3><?php echo types_render_field("start-date", array()) . ' at ' . $start; ?></h3>
 			</div></a>
 		</div>
@@ -80,6 +81,49 @@ get_header();?>
 		<?php endif; ?>
 
 	<?php endwhile; ?>
+	</div>
+
+
+
+	<?php 
+		$childargs = array(
+			'post_type'		=> 'trip',
+			'meta_key'		=> 'wpcf-start-date',
+			'orderby'		=> 'meta_value',
+			'order' 		=> 'DESC',
+			'meta_query'	=> array(
+				array(
+				'key'		=> 'wpcf-start-date',
+				'compare'	=> '<',
+				'value'		=> intval(strtotime(date('Y-m-d'))),
+				'type'		=> 'numeric'
+				)
+			),
+		);
+		$loop = new WP_Query($childargs);
+		$count = 0;
+	?>
+
+	<div class="trips-container">
+		<h1 class="past-trips-h1">Past Trips</h1>
+		<div class="green-rectangle" style="margin-left: 30px; margin-bottom: 30px; margin-top: 0;"></div>
+		<table class="past-trips" style="width:100%">
+			<tr>
+				<th>Trip Title</th>
+				<th>Location</th> 
+				<th>Date</th>
+			</tr>
+			<?php while ($loop->have_posts()) : $loop->the_post();
+				$trip_title = types_render_field("trip-title", array());
+				$redirect_to = home_url() . "/index.php/trip/" . strtolower(preg_replace("/[\s_]/", "-", $trip_title));
+			?>
+				<tr>
+					<td><a href="<?php echo $redirect_to; ?>"><?php echo $trip_title; ?></a></td>
+					<td><?php echo types_render_field("trip-location", array());?></td> 
+					<td><?php echo types_render_field("start-date", array()); ?></td>
+				</tr>
+			<?php endwhile; ?>
+		</table>
 	</div>
 
 <?php get_footer(); ?>

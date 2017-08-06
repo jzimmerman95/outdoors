@@ -11,12 +11,13 @@
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); 
 	
 	$post_date = get_the_date("Y-m-d h:i:sa");
+	$user_id = wp_get_current_user()->ID;
 
 	$adventure_id = $wpdb->get_results("SELECT c_uid FROM m_adventure WHERE c_created_date='" . $post_date . "'")[0]->c_uid;
 
-	$count = $wpdb->get_results("SELECT count(*) as count FROM m_attendee WHERE c_adventure='" . $adventure_id . "' AND c_member='" . wp_get_current_user()->ID . "' AND c_deleted=0")[0]->count;
+	$count = $wpdb->get_results("SELECT count(*) as count FROM m_attendee WHERE c_adventure='" . $adventure_id . "' AND c_member='" . $user_id . "' AND c_deleted=0")[0]->count;
 
-	$row_exists = $wpdb->get_results("SELECT count(*) as count FROM m_attendee WHERE c_adventure='" . $adventure_id . "' AND c_member='" . wp_get_current_user()->ID . "'")[0]->count;
+	$row_exists = $wpdb->get_results("SELECT count(*) as count FROM m_attendee WHERE c_adventure='" . $adventure_id . "' AND c_member='" . $user_id . "'")[0]->count;
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -66,10 +67,9 @@
 		</div>
 
 		<?php
-			$attendees = $wpdb->get_results("SELECT c_member FROM m_attendee WHERE c_adventure='" . $adventure_id . "'");
+			$attendees = $wpdb->get_results("SELECT c_member, c_status, c_deleted FROM m_attendee WHERE c_adventure='" . $adventure_id . "'");
+
 		?>
-
-
 
 		<div class="trip-attendees">
 			<div class="trip-detail-title-main">Trip Attendees</div>
@@ -80,12 +80,39 @@
 					<th>Phone</th>
 					<th>Status</th>
 				</tr>
-				<tr>
-					<td>Jessica Zimmerman</td>
-					<td>jkz3km@virginia.edu</td> 
-					<td>239.961.3399</td>
-					<td>Joined</td>
-				</tr>
+				<?php foreach($attendees as $key=>$value):
+					$status = $attendees[$key]->c_status;
+					$attendee_id = $attendees[$key]->c_member;
+					$deleted = $attendees[$key]->c_deleted;
+
+					if ($deleted){
+						continue;
+					}
+
+					$user = $wpdb->get_results("SELECT * FROM wp_usermeta WHERE 
+						user_id='" . $attendee_id . "' AND (
+							meta_key='first_name' OR 
+							meta_key='last_name' OR
+							meta_key='email' OR
+							meta_key='phone_number'
+						)");
+
+					$name = $user[0]->meta_value . ' ' . $user[1]->meta_value;
+					$email = $user[2]->meta_value;
+					$phone = $user[3]->meta_value;
+
+				?>
+					<tr>
+						<td><?php echo $name;?></td>
+						<td><?php echo $email;?></td> 
+						<td><?php echo $phone;?></td>
+						<?php if ($status == 1):?>
+							<td>Joined</td>
+						<?php else: ?>
+							<td>Waitlist</td>
+						<?php endif; ?>
+					</tr>
+				<?php endforeach; ?>
 
 			</table>
 		</div>

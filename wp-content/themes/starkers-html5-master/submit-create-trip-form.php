@@ -65,7 +65,7 @@
 		($trip_id, 'wpcf-depart-from', '" . $depart . "'),
 		($trip_id, 'wpcf-trip-location', '" . $location . "'),
 		($trip_id, 'wpcf-trip-title', '" . $trip_title . "'),
-		($trip_id, 'wpcf-trip-cateogry', '" . $trip_cat . "')";
+		($trip_id, 'wpcf-trip-category', '" . $trip_cat . "')";
 
 	$wpdb->query($query);
 
