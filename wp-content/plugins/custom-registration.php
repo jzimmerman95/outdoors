@@ -23,7 +23,7 @@ function cr(&$fields, &$errors) {
     
     // Get fields from submitted form
     $fields = cr_get_fields();
-    
+
     // Validate fields and produce errors
     if (cr_validate($fields, $errors)) {
 
@@ -60,6 +60,8 @@ function cr_sanitize(&$fields) {
 }
 
 function insert_user_meta($user_id, $fields) {
+  update_user_meta( $user_id, 'first_name', $fields['first_name'] );
+  update_user_meta( $user_id, 'last_name', $fields['last_name'] );
   update_user_meta( $user_id, 'gender', $fields['gender'] );
   update_user_meta( $user_id, 'birthday', $fields['birthday'] );
   update_user_meta( $user_id, 'phone_number', $fields['phone_number'] );
@@ -97,12 +99,12 @@ function cr_display_form($fields = array(), $errors = null) {
     </div>
   
     <div>
-      <label for="firstname">First Name</label>
+      <label for="first_name">First Name</label>
       <input type="text" name="first_name" value="<?php echo (isset($fields['first_name']) ? $fields['first_name'] : '') ?>">
     </div>
     
     <div>
-      <label for="lastname">Last Name</label>
+      <label for="last_name">Last Name</label>
       <input type="text" name="last_name" value="<?php echo (isset($fields['last_name']) ? $fields['last_name'] : '') ?>">
     </div>
 
