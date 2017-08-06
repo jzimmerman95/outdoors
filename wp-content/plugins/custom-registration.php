@@ -26,10 +26,12 @@ function cr(&$fields, &$errors) {
     
     // Validate fields and produce errors
     if (cr_validate($fields, $errors)) {
-      
+
       // If successful, register user
-      wp_insert_user($fields);
-      
+      $user_id = wp_insert_user($fields);
+
+      insert_user_meta($user_id, $fields);
+
       // And display a message
       echo 'Registration complete. Goto <a href="' . get_site_url() . '/wp-login.php">login page</a>.';
       
@@ -46,14 +48,23 @@ function cr(&$fields, &$errors) {
 }
 
 function cr_sanitize(&$fields) {
-  $fields['user_login']   =  isset($fields['user_login'])  ? sanitize_user($fields['user_login']) : '';
   $fields['user_pass']    =  isset($fields['user_pass'])   ? esc_attr($fields['user_pass']) : '';
-  $fields['user_email']   =  isset($fields['user_email'])  ? sanitize_email($fields['user_email']) : '';
+  $fields['user_email']   =   isset($fields['user_email'])  ? sanitize_email($fields['user_email']) : '';
+  $fields['user_login']   = $fields['user_email'];
   $fields['user_url']     =  isset($fields['user_url'])    ? esc_url($fields['user_url']) : '';
   $fields['first_name']   =  isset($fields['first_name'])  ? sanitize_text_field($fields['first_name']) : '';
   $fields['last_name']    =  isset($fields['last_name'])   ? sanitize_text_field($fields['last_name']) : '';
-  $fields['nickname']     =  isset($fields['nickname'])    ? sanitize_text_field($fields['nickname']) : '';
-  $fields['description']  =  isset($fields['description']) ? esc_textarea($fields['description']) : '';
+  $fields['gender']       =   isset($fields['gender'])   ? sanitize_text_field($fields['gender']) : '';
+  $fields['birthday']     =   isset($fields['birthday'])   ? sanitize_text_field($fields['birthday']) : '';
+  $fields['phone_number']     =   isset($fields['phone_number'])   ? sanitize_text_field($fields['phone_number']) : '';
+}
+
+function insert_user_meta($user_id, $fields) {
+  update_user_meta( $user_id, 'gender', $fields['gender'] );
+  update_user_meta( $user_id, 'birthday', $fields['birthday'] );
+  update_user_meta( $user_id, 'phone_number', $fields['phone_number'] );
+  update_user_meta( $user_id, 'user_paid', '0');
+  update_user_meta( $user_id, 'waiver_signed', '0');
 }
 
 function cr_display_form($fields = array(), $errors = null) {
@@ -74,60 +85,62 @@ function cr_display_form($fields = array(), $errors = null) {
   // Disaply form
   
   ?><form action="<?php $_SERVER['REQUEST_URI'] ?>" method="post">
-    <div>
-      <label for="user_login">Username <strong>*</strong></label>
-      <input type="text" name="user_login" value="<?php echo (isset($fields['user_login']) ? $fields['user_login'] : '') ?>">
-    </div>
-    
-    <div>
-      <label for="user_pass">Password <strong>*</strong></label>
-      <input type="password" name="user_pass">
-    </div>
-    
+
     <div>
       <label for="email">Email <strong>*</strong></label>
       <input type="text" name="user_email" value="<?php echo (isset($fields['user_email']) ? $fields['user_email'] : '') ?>">
     </div>
-    
+
     <div>
-      <label for="website">Website</label>
-      <input type="text" name="user_url" value="<?php echo (isset($fields['user_url']) ? $fields['user_url'] : '') ?>">
+      <label for="user_pass">Password <strong>*</strong></label>
+      <input type="password" name="user_pass">
     </div>
-    
+  
     <div>
       <label for="firstname">First Name</label>
       <input type="text" name="first_name" value="<?php echo (isset($fields['first_name']) ? $fields['first_name'] : '') ?>">
     </div>
     
     <div>
-      <label for="website">Last Name</label>
+      <label for="lastname">Last Name</label>
       <input type="text" name="last_name" value="<?php echo (isset($fields['last_name']) ? $fields['last_name'] : '') ?>">
     </div>
-    
-    <div>
-      <label for="nickname">Nickname</label>
-      <input type="text" name="nickname" value="<?php echo (isset($fields['nickname']) ? $fields['nickname'] : '') ?>">
+
+    <div class="two_input_section">
+         <div class="input-title">Birthday</div>
+         <input class="first_input" type="text" id="date" name="birthday" required><br>
     </div>
-    
-    <div>
-      <label for="bio">About / Bio</label>
-      <textarea name="description"><?php echo (isset($fields['description']) ? $fields['description'] : '') ?></textarea>
+
+    <div class="two_input_section">
+      <div class="input-title">Gender</div>
+        <select name="gender" required>
+          <option value="female">Female</option>
+          <option value="male">Male</option>
+        </select>
+        <br>
     </div>
-    
+
+    <div>
+      <label for="lastname">Phone</label>
+      <input type="text" name="phone_number" value="<?php echo (isset($fields['phone_number']) ? $fields['phone_number'] : '') ?>">
+    </div>
+            
     <input type="submit" name="submit" value="Register">
     </form><?php
 }
 
 function cr_get_fields() {
+  $user_email = isset($_POST['user_email'])   ?  $_POST['user_email']        :  '';
   return array(
-    'user_login'   =>  isset($_POST['user_login'])   ?  $_POST['user_login']   :  '',
     'user_pass'    =>  isset($_POST['user_pass'])    ?  $_POST['user_pass']    :  '',
-    'user_email'   =>  isset($_POST['user_email'])   ?  $_POST['user_email']        :  '',
+    'user_email'   =>  $user_email,
+    'user_login'   => $user_email,
     'user_url'     =>  isset($_POST['user_url'])     ?  $_POST['user_url']     :  '',
     'first_name'   =>  isset($_POST['first_name'])   ?  $_POST['first_name']        :  '',
     'last_name'    =>  isset($_POST['last_name'])    ?  $_POST['last_name']        :  '',
-    'nickname'     =>  isset($_POST['nickname'])     ?  $_POST['nickname']     :  '',
-    'description'  =>  isset($_POST['description'])  ?  $_POST['description']  :  ''
+    'gender'       => isset($_POST['gender']) ? $_POST['gender'] : '',
+    'birthday'       => isset($_POST['birthday']) ? $_POST['birthday'] : '',
+    'phone_number'    =>  isset($_POST['phone_number'])    ?  $_POST['phone_number']        :  '',
   );
 }
 
@@ -139,19 +152,8 @@ function cr_validate(&$fields, &$errors) {
   
   // Validate form data
   
-  if (empty($fields['user_login']) || empty($fields['user_pass']) || empty($fields['user_email'])) {
+  if (empty($fields['user_pass']) || empty($fields['user_email'])) {
     $errors->add('field', 'Required form field is missing');
-  }
-
-  if (strlen($fields['user_login']) < 4) {
-    $errors->add('username_length', 'Username too short. At least 4 characters is required');
-  }
-
-  if (username_exists($fields['user_login']))
-    $errors->add('user_name', 'Sorry, that username already exists!');
-
-  if (!validate_username($fields['user_login'])) {
-    $errors->add('username_invalid', 'Sorry, the username you entered is not valid');
   }
 
   if (strlen($fields['user_pass']) < 5) {
@@ -164,12 +166,6 @@ function cr_validate(&$fields, &$errors) {
 
   if (email_exists($fields['user_email'])) {
     $errors->add('email', 'Email Already in use');
-  }
-  
-  if (!empty($fields['user_url'])) {
-    if (!filter_var($fields['user_url'], FILTER_VALIDATE_URL)) {
-      $errors->add('user_url', 'Website is not a valid URL');
-    }
   }
   
   // If errors were produced, fail

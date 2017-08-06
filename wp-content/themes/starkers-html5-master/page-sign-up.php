@@ -22,10 +22,6 @@ get_header();?>
 
 <script>
   flatpickr("#date", {altInput: true});
-
-  <?php
-  ?>
-
   var select = document.getElementsByName("Select_21")[0]
   select.firstChild.innerHTML = "Gender";
   select.firstChild.disabled = true;
