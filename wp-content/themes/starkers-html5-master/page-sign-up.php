@@ -13,7 +13,13 @@ get_header();?>
   <div class="sign-up-header-wrapper">
     <img class="home-arrows" src="/outdoors/wp-content/uploads/arrow-left.png" /><div class="sign-up-header">Join Outdoors</div><img class="home-arrows" src="/outdoors/wp-content/uploads/arrow-right.png" />
   </div>
-  <?php echo do_shortcode("[cr]"); ?>
+  <?php 
+    if(is_user_logged_in()) {
+      echo 'You are currently logged in. Redirect to upcoming trips';
+    }else {
+      echo do_shortcode("[cr]");
+    }
+  ?>
 </div>
 
 <link rel="stylesheet" href="https://unpkg.com/flatpickr/dist/flatpickr.min.css">
