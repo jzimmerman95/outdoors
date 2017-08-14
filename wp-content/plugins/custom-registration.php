@@ -67,6 +67,7 @@ function insert_user_meta($user_id, $fields) {
   update_user_meta( $user_id, 'phone_number', $fields['phone_number'] );
   update_user_meta( $user_id, 'user_paid', '0');
   update_user_meta( $user_id, 'waiver_signed', '0');
+  update_user_meta( $user_id, 'email', $fields['user_email']);
 }
 
 function cr_display_form($fields = array(), $errors = null) {
