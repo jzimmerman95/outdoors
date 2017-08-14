@@ -9,12 +9,24 @@
  
 get_header();?>
 
-<div class="sign-in-bg">
-  <div class="sign-up-header-wrapper">
-    <img class="home-arrows" src="/outdoors/wp-content/uploads/arrow-left.png" /><div class="sign-up-header">Welcome Back</div><img class="home-arrows" src="/outdoors/wp-content/uploads/arrow-right.png" />
-  </div>
-  <div class="form-holder"><?php echo do_shortcode("[RM_Login]"); ?></div>
-</div>
+<?php
+if ( ! is_user_logged_in() ) { // Display WordPress login form:
+    $args = array(
+        'redirect' => admin_url(), 
+        'form_id' => 'loginform-custom',
+        'label_username' => __( 'Username custom text' ),
+        'label_password' => __( 'Password custom text' ),
+        'label_remember' => __( 'Remember Me custom text' ),
+        'label_log_in' => __( 'Log In custom text' ),
+        'remember' => true
+    );
+    wp_login_form( $args );
+} else { // If logged in:
+    wp_loginout( home_url() ); // Display "Log Out" link.
+    echo " | ";
+    wp_register('', ''); // Display "Site Admin" link.
+}
+?>
 
 
 

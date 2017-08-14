@@ -5642,3 +5642,43 @@ function wp_cache_get_last_changed( $group ) {
 
 	return $last_changed;
 }
+
+
+#
+# Add Phone Number info to users admin table
+#
+
+function new_contact_methods( $contactmethods ) {
+    $contactmethods['phone_number'] = 'Phone Number';
+    $contactmethods['birthday'] = 'Birthday';
+    $contactmethods['gender'] = 'Gender';
+    return $contactmethods;
+}
+add_filter( 'user_contactmethods', 'new_contact_methods', 10, 1 );
+
+
+function new_modify_user_table( $column ) {
+    $column['phone_number'] = 'Phone';
+    $column['birthday'] = 'Birthday';
+    $column['gender'] = 'Gender';
+    return $column;
+}
+add_filter( 'manage_users_columns', 'new_modify_user_table' );
+
+function new_modify_user_table_row( $val, $column_name, $user_id ) {
+    switch ($column_name) {
+        case 'phone_number' :
+            return get_the_author_meta( 'phone_number', $user_id );
+            break;
+        case 'birthday' :
+            return get_the_author_meta( 'birthday', $user_id );
+            break;
+        case 'gender' :
+            return get_the_author_meta( 'gender', $user_id );
+            break;
+        default:
+    }
+    return $val;
+}
+add_filter( 'manage_users_custom_column', 'new_modify_user_table_row', 10, 3 );
+
