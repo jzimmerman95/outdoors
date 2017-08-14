@@ -6,6 +6,9 @@
  * @subpackage Starkers
  * @since Starkers HTML5 3.2
  */
+
+global $wp;
+print_r($wp->request);
 ?>
 
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); 
@@ -25,21 +28,34 @@
 		<h1 class="faq-title"><?php echo types_render_field( "trip-title", array()); ?></h1>
 	</div>
 
-	<?php $start_date = date("h:ia", types_render_field( "start-date", array('output' => 'raw')));
-	$end_date = date("h:ia", types_render_field( "end-date", array('output' => 'raw')));
-	$signupby = date("h:ia", types_render_field( "sign-up-by", array('output' => 'raw')));?>
+	<?php 
+		$start_date = date("h:ia", types_render_field("start-date", array('output' => 'raw')));
+		$end_date = date("h:ia", types_render_field("end-date", array('output' => 'raw')));
+		$signupby = date("h:ia", types_render_field("sign-up-by", array('output' => 'raw')));
+		$max_attendees = types_render_field('max-attendees', array());
+	?>
 	
 	<div class="trip-container">
 		<div class="trip-col-container">
 			<div class="trip-left-col">
+<!--  -->
+
+
 				<?php if ($count == 0): ?>
 					<form name="join-trip" method="post" action="/outdoors/wp-content/themes/starkers-html5-master/submit-join-trip-form.php">
 						<input type="text" style="display: none;" value="<?php echo $adventure_id; ?>" name="adventure_id">
+						<input type="text" style="display: none;" value="<?php echo $max_attendees; ?>" name="max_attendees">
 						<input type="text" style="display: none;" value="<?php echo types_render_field( "trip-title", array()); ?>" name="post_title">
 						<input type="text" style="display: none;" value="<?php echo $row_exists; ?>" name="row_exists">
 						<div class="join-trip" onClick="document.forms['join-trip'].submit();">+ Join Trip</div>
 						<input type="submit" style="display: none;">
 					</form>
+
+
+
+
+
+
 				<?php else: ?>
 					<form name="leave-trip" method="post" action="/outdoors/wp-content/themes/starkers-html5-master/submit-leave-trip-form.php">
 						<input type="text" style="display: none;" value="<?php echo $adventure_id; ?>" name="adventure_id">
@@ -56,9 +72,17 @@
 					<div class="trip-detail"><span style="font-family: GothamBold;">End: </span><?php echo types_render_field( "end-date", array()) . ' at ' . $end_date; ?></div>
 					<div class="trip-detail"><span style="font-family: GothamBold;">Sign-up By: </span><?php echo types_render_field( "sign-up-by", array()) . ' at ' . $signupby; ?></div>
 					<div class="trip-detail"><span style="font-family: GothamBold;">Fee: </span>$<?php echo types_render_field( "fee", array()); ?></div>
+					<div class="trip-detail"><span style="font-family: GothamBold;">Max Attendees: </span><?php echo types_render_field( "max-attendees", array()); ?></div>
 				</div>
+				<?php 
+					$name = get_the_author_meta('display_name');
+					$name = str_replace(' ', '<br />', $name);
+				?>
+
 				<div class="trip-leader">
 					<div class="trip-detail-title">Trip Leader</div>
+					<div class="trip-detail"><span class="leader-img"><?php echo get_avatar( get_the_author_meta( 'ID' ), 80 ); ?></span><span class="trip-leader-name" style="font-family: GothamBold;"><?php echo $name; ?></span></div>
+					<span class="leader-email"><span style="font-family: GothamBold;">Email:</span> <?php echo get_the_author_meta('email'); ?></span>
 				</div>
 			</div><div class="trip-right-col">
 				<div class="trip-detail-title-main">Trip Overview</div>
@@ -85,9 +109,7 @@
 					$attendee_id = $attendees[$key]->c_member;
 					$deleted = $attendees[$key]->c_deleted;
 
-					if ($deleted){
-						continue;
-					}
+					if ($deleted) continue;
 
 					$user = $wpdb->get_results("SELECT * FROM wp_usermeta WHERE 
 						user_id='" . $attendee_id . "' AND (

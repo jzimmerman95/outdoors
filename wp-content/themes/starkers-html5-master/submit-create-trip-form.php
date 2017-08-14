@@ -4,7 +4,7 @@
 
 	$wpdb->show_errors();
 	$current_time = date("Y-m-d h:i:sa");
-	$current_user = 1001; // get_current_user_id() // need to hook this up
+	$current_user = wp_get_current_user()->ID;
 
 	if ( isset( $_POST ) ){
 		$signup_date = sanitize_text_field($_POST['sign_up_by_date']) . " " . sanitize_text_field($_POST['sign_up_by_time']);
@@ -37,9 +37,10 @@
 
 		$wp_posts = 'wp_posts';
 
-		$post_name = strtolower(preg_replace("/[\s_]/", "-", $trip_title));
+		$post_name = strtolower(preg_replace('/[^a-zA-Z0-9-_\.]/','', preg_replace("/[\s_]/", "-", $trip_title)));
 
 		$wpdb->insert($wp_posts, array(
+			'post_author' => $current_user,
 			'post_date' => $current_time,
 			'post_title' => $trip_title,
 			'post_type' => 'trip',

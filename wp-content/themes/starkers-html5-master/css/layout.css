@@ -390,6 +390,7 @@ box:after {
 
 .trip-img-holder {
   height: 300px;
+  word-wrap: break-word;
 }
 
 .activity-wrapper:nth-child(3n),
@@ -440,7 +441,7 @@ box:after {
   font-size: 30px;
   font-family: GothamBold;
   pointer-events: none;
-  padding: 30px 0 0 30px;
+  padding: 30px 30px 0 30px;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
 }
 
@@ -524,10 +525,20 @@ box:after {
 
 .join-logo {
   position: absolute;
-  width: 60px;
-  display: block;
+  width: 50px;
   left: 15%;
   top: 30%;
+}
+
+.leader-img {
+  padding-right: 30px;
+}
+
+
+.trip-leader-name {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 10px;
 }
 
 .join h1 {
@@ -851,6 +862,7 @@ box:after {
   line-height: 25px;
   padding: 10px 0px;
   padding-left: 5px;
+  text-transform: uppercase;
 }
 
 .officer-email {
@@ -863,6 +875,23 @@ box:after {
   font-size: 14px;
   line-height: 30px;
   padding-left: 5px;
+}
+
+.past-officers {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.past-officers h1 {
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  font-family: GothamBold;
+  margin-bottom: 30px;
+}
+
+.past-officer-header {
+  font-family: GothamBold;
 }
 
 footer {
@@ -1113,7 +1142,9 @@ input[type="submit"] {
 /* ----------------------------------------- */
 
 .single-trip .menu-external-menu-container,
-.page-id-155 .menu-external-menu-container {
+.page-id-155 .menu-external-menu-container,
+.page-id-137 .menu-external-menu-container,
+.page-id-261 .menu-external-menu-container {
   display: none;
 }
 
@@ -1167,12 +1198,21 @@ input[type="submit"] {
   background-color: #b73c3c;
 }
 
+.leader-email {
+  margin-left: 30px;
+  font-size: 12px;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
 .join-trip:hover,
 .leave-trip:hover {
   background-color: white;
   color: #44b749;
   height: 46px;
-  width: calc(90%-4px);
+  line-height: 46px;
+  width: calc(90% - 4px);
   border: 2px solid #44b749;
 }
 
@@ -1209,12 +1249,30 @@ input[type="submit"] {
 }
 
 .trip-detail {
-  padding: 5px 30px 5px 30px;
+  padding: 0 30px 0 30px;
   line-height: 25px;
 }
 
 .trip-detail:last-child {
   padding-bottom: 30px;
+}
+
+.contact-trip-leader {
+  border: 2px solid #44b749;
+  width: 80%;
+  font-family: GothamBold;
+  color: #44b749;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.contact-trip-leader:hover {
+  background-color: #44b749;
+  color: white;
+  cursor: pointer;
 }
 
 .trip-overview {
@@ -1270,8 +1328,36 @@ table td {
 
 
 
+/* PROFILE PAGE */
+/* ----------------------------------------- */
 
+.profile-bg {
+  background: url('/outdoors/wp-content/uploads/profile-bg.png') no-repeat center -50px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  position: relative;
+  top: 0;
+  z-index: -1;
+}
 
+.profile-bg h1 {
+  color: white;
+  font-size: 60px;
+  font-family: 'PlayfairDisplay';
+  text-shadow: 3px 3px 10px black;
+  text-align: center;
+}
 
+.circle-img {
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+}
 
-
+.prof-img {
+  padding-top: 250px;
+}
