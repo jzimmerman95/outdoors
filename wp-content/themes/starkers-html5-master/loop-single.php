@@ -111,17 +111,11 @@ print_r($wp->request);
 
 					if ($deleted) continue;
 
-					$user = $wpdb->get_results("SELECT * FROM wp_usermeta WHERE 
-						user_id='" . $attendee_id . "' AND (
-							meta_key='first_name' OR 
-							meta_key='last_name' OR
-							meta_key='email' OR
-							meta_key='phone_number'
-						)");
+					$user = get_user_by( 'id', $attendee_id );
 
-					$name = $user[0]->meta_value . ' ' . $user[1]->meta_value;
-					$email = $user[2]->meta_value;
-					$phone = $user[3]->meta_value;
+					$name = $user->first_name . ' ' . $user->last_name;
+					$email = $user->email;
+					$phone = $user->phone_number;
 
 				?>
 					<tr>

@@ -32,8 +32,8 @@ function cr(&$fields, &$errors) {
 
       insert_user_meta($user_id, $fields);
 
-      // And display a message
-      echo 'Registration complete. Goto <a href="' . get_site_url() . '/wp-login.php">login page</a>.';
+      wp_redirect(home_url() . "/sign-in/");
+      exit;
       
       // Clear field data
       $fields = array(); 
@@ -87,49 +87,49 @@ function cr_display_form($fields = array(), $errors = null) {
   
   // Disaply form
   
-  ?><form action="<?php $_SERVER['REQUEST_URI'] ?>" method="post">
+  ?>
 
-    <div>
-      <label for="email">Email <strong>*</strong></label>
-      <input type="text" name="user_email" value="<?php echo (isset($fields['user_email']) ? $fields['user_email'] : '') ?>">
+    <div class="form-wrapper">
+      <form class="sign-up-form" method="post" action="<?php $_SERVER['REQUEST_URI'] ?>">
+        <div class="two_input_section">
+          <div class="input-title">First Name</div>
+          <input class="first_input" type="text" name="first_name" value="<?php echo (isset($fields['first_name']) ? $fields['first_name'] : '') ?>" required><br>
+        </div><div class="two_input_section">
+          <div class="input-title">Last Name</div>
+          <input type="text" name="last_name" value="<?php echo (isset($fields['last_name']) ? $fields['last_name'] : '') ?>" required><br>
+        </div>
+        <div class="two_input_section">
+          <div class="input-title">Email</div>
+          <input class="first_input" type="text" name="user_email" value="<?php echo (isset($fields['user_email']) ? $fields['user_email'] : '') ?>" required><br>
+        </div><div class="two_input_section">
+          <div class="input-title">Phone</div>
+          <input type="text" name="phone_number" value="<?php echo (isset($fields['phone_number']) ? $fields['phone_number'] : '') ?>" required><br>
+        </div>
+        <div class="two_input_section">
+          <div class="input-title">Birthday</div>
+          <input class="first_input" type="text" id="date" name="birthday" required><br>
+        </div><div class="two_input_section">
+          <div class="input-title">Gender</div>
+          <select name="gender" required>
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+          </select><br>
+        </div>
+        <!--
+        Figure out drop down menu for Gender
+        -->
+        <div class="two_input_section">
+          <div class="input-title">Password</div>
+          <input class="first_input" type="password" name="user_pass" required><br>
+        </div><div class="two_input_section">
+          <div class="input-title">Confirm Password</div>
+          <input type="password" name="confirm_password" required><br>
+        </div>
+        <input type="submit" name="submit" value="Register">
+      </form>
     </div>
 
-    <div>
-      <label for="user_pass">Password <strong>*</strong></label>
-      <input type="password" name="user_pass">
-    </div>
-  
-    <div>
-      <label for="first_name">First Name</label>
-      <input type="text" name="first_name" value="<?php echo (isset($fields['first_name']) ? $fields['first_name'] : '') ?>">
-    </div>
-    
-    <div>
-      <label for="last_name">Last Name</label>
-      <input type="text" name="last_name" value="<?php echo (isset($fields['last_name']) ? $fields['last_name'] : '') ?>">
-    </div>
-
-    <div class="two_input_section">
-         <div class="input-title">Birthday</div>
-         <input class="first_input" type="text" id="date" name="birthday" required><br>
-    </div>
-
-    <div class="two_input_section">
-      <div class="input-title">Gender</div>
-        <select name="gender" required>
-          <option value="female">Female</option>
-          <option value="male">Male</option>
-        </select>
-        <br>
-    </div>
-
-    <div>
-      <label for="lastname">Phone</label>
-      <input type="text" name="phone_number" value="<?php echo (isset($fields['phone_number']) ? $fields['phone_number'] : '') ?>">
-    </div>
-            
-    <input type="submit" name="submit" value="Register">
-    </form><?php
+    <?php
 }
 
 function cr_get_fields() {
