@@ -1,0 +1,664 @@
+0000.000 (0) Opened log file at time: Sat, 12 Aug 2017 02:31:01 +0000 on http://localhost/outdoors
+0000.001 (0) UpdraftPlus WordPress backup plugin (https://updraftplus.com): 1.13.4 WP: 4.8 PHP: 5.6.28 (apache2handler, Darwin Jessicas-MacBook-Pro.local 15.4.0 Darwin Kernel Version 15.4.0: Fri Feb 26 22:08:05 PST 2016; root:xnu-3248.40.184~3/RELEASE_X86_64 x86_64) MySQL: 5.5.5 WPLANG: en_US Server: Apache/2.4.23 (Unix) OpenSSL/1.0.2j PHP/5.6.28 mod_perl/2.0.8-dev Perl/v5.16.3 safe_mode: 0 max_execution_time: 900 memory_limit: 256M (used: 36.8M | 37.3M) multisite: N openssl: OpenSSL 1.0.2j  26 Sep 2016 mcrypt: Y LANG:  ZipArchive::addFile: Y
+0000.001 (0) Free space on disk containing Updraft's temporary directory: 109000.2 MB
+0000.002 (0) Tasks: Backup files: 1 (schedule: manual) Backup DB: 1 (schedule: manual)
+0000.005 (0) Requesting semaphore lock (fd) (apparently not via scheduler)
+0000.009 (0) Set semaphore last lock (fd) time to 2017-08-12 02:31:01
+0000.010 (0) Semaphore lock (fd) complete
+0000.013 (0) Backup run: resumption=0, nonce=524b37049caa, begun at=1502505061 (0s ago), job type=backup
+0000.014 (0) Scheduling a resumption (1) after 300 seconds (1502505361) in case this run gets aborted
+0000.023 (0) Checking if we have a zip executable available
+0000.024 (0) Testing: /usr/bin/zip
+0000.029 (0) Output: zip warning: binziptest/test.zip not found or empty
+0000.030 (0) Output: adding: binziptest/subdir1/	(in=0) (out=0) (stored 0%)
+0000.031 (0) Output: adding: binziptest/subdir1/subdir2/	(in=0) (out=0) (stored 0%)
+0000.032 (0) Output: adding: binziptest/subdir1/subdir2/test.html	(in=131) (out=107) (deflated 18%)
+0000.032 (0) Output: total bytes=131, compressed=107 -> 18% savings
+0000.038 (0) Output: adding: binziptest/subdir1/subdir2/test2.html	(in=138) (out=113) (deflated 18%)
+0000.039 (0) Output: total bytes=269, compressed=220 -> 18% savings
+0000.045 (0) Working binary zip found: /usr/bin/zip
+0000.047 (0) Zip engine: found/will use a binary zip: /usr/bin/zip
+0000.048 (0) Creation of backups of directories: beginning
+0000.050 (0) Beginning creation of dump of plugins (split every: 400 MB)
+0000.325 (0) Total entities for the zip file: 679 directories, 3980 files (0 skipped as non-modified), 52.2 MB
+0000.328 (0) Zip: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-plugins.zip.tmp: 100 files added (on-disk size: 0 KB)
+0000.331 (0) Zip: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-plugins.zip.tmp: 200 files added (on-disk size: 0 KB)
+0000.333 (0) Zip: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-plugins.zip.tmp: 300 files added (on-disk size: 0 KB)
+0000.335 (0) Zip: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-plugins.zip.tmp: 400 files added (on-disk size: 0 KB)
+0000.339 (0) Zip: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-plugins.zip.tmp: 500 files added (on-disk size: 0 KB)
+0000.340 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (7.9 MB, 3980 files batched, 501 (501) added so far); re-opening (prior size: 0 KB)
+0000.764 (0) backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-plugins.zip.tmp: size is now: 3.80 MB
+0000.769 (0) Zip: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-plugins.zip.tmp: 600 files added (on-disk size: 3891.7 KB)
+0000.772 (0) Zip: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-plugins.zip.tmp: 700 files added (on-disk size: 3891.7 KB)
+0000.774 (0) Zip: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-plugins.zip.tmp: 800 files added (on-disk size: 3891.7 KB)
+0000.777 (0) Zip: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-plugins.zip.tmp: 900 files added (on-disk size: 3891.7 KB)
+0000.779 (0) Zip: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-plugins.zip.tmp: 1000 files added (on-disk size: 3891.7 KB)
+0000.780 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (11.5 MB, 3980 files batched, 501 (1002) added so far); re-opening (prior size: 3891.7 KB)
+0001.503 (0) backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-plugins.zip.tmp: size is now: 7.60 MB
+0001.510 (0) Zip: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-plugins.zip.tmp: 1100 files added (on-disk size: 7769.9 KB)
+0001.513 (0) Zip: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-plugins.zip.tmp: 1200 files added (on-disk size: 7769.9 KB)
+0001.516 (0) Zip: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-plugins.zip.tmp: 1300 files added (on-disk size: 7769.9 KB)
+0001.519 (0) Zip: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-plugins.zip.tmp: 1400 files added (on-disk size: 7769.9 KB)
+0001.523 (0) Zip: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-plugins.zip.tmp: 1500 files added (on-disk size: 7769.9 KB)
+0001.524 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (3.6 MB, 3980 files batched, 501 (1503) added so far); re-opening (prior size: 7769.9 KB)
+0001.790 (0) Zip: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-plugins.zip.tmp: 1600 files added (on-disk size: 9031.2 KB)
+0001.793 (0) Zip: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-plugins.zip.tmp: 1700 files added (on-disk size: 9031.2 KB)
+0001.795 (0) Zip: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-plugins.zip.tmp: 1800 files added (on-disk size: 9031.2 KB)
+0001.799 (0) Zip: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-plugins.zip.tmp: 1900 files added (on-disk size: 9031.2 KB)
+0001.802 (0) Zip: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-plugins.zip.tmp: 2000 files added (on-disk size: 9031.2 KB)
+0001.802 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (7.2 MB, 3980 files batched, 501 (2004) added so far); re-opening (prior size: 9031.2 KB)
+0002.259 (0) backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-plugins.zip.tmp: size is now: 11.10 MB
+0002.265 (0) Zip: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-plugins.zip.tmp: 2100 files added (on-disk size: 11363.6 KB)
+0002.267 (0) Zip: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-plugins.zip.tmp: 2200 files added (on-disk size: 11363.6 KB)
+0002.269 (0) Zip: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-plugins.zip.tmp: 2300 files added (on-disk size: 11363.6 KB)
+0002.272 (0) Zip: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-plugins.zip.tmp: 2400 files added (on-disk size: 11363.6 KB)
+0002.276 (0) Zip: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-plugins.zip.tmp: 2500 files added (on-disk size: 11363.6 KB)
+0002.277 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (1.6 MB, 3980 files batched, 501 (2505) added so far); re-opening (prior size: 11363.6 KB)
+0002.534 (0) Zip: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-plugins.zip.tmp: 2600 files added (on-disk size: 12215.5 KB)
+0002.538 (0) Zip: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-plugins.zip.tmp: 2700 files added (on-disk size: 12215.5 KB)
+0002.542 (0) Zip: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-plugins.zip.tmp: 2800 files added (on-disk size: 12215.5 KB)
+0002.545 (0) Zip: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-plugins.zip.tmp: 2900 files added (on-disk size: 12215.5 KB)
+0002.548 (0) Zip: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-plugins.zip.tmp: 3000 files added (on-disk size: 12215.5 KB)
+0002.549 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (3.9 MB, 3980 files batched, 501 (3006) added so far); re-opening (prior size: 12215.5 KB)
+0002.818 (0) Zip: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-plugins.zip.tmp: 3100 files added (on-disk size: 13724.8 KB)
+0002.820 (0) Zip: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-plugins.zip.tmp: 3200 files added (on-disk size: 13724.8 KB)
+0002.823 (0) Zip: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-plugins.zip.tmp: 3300 files added (on-disk size: 13724.8 KB)
+0002.826 (0) Zip: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-plugins.zip.tmp: 3400 files added (on-disk size: 13724.8 KB)
+0002.829 (0) Zip: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-plugins.zip.tmp: 3500 files added (on-disk size: 13724.8 KB)
+0002.830 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 500 files added on this batch (15 MB, 3980 files batched, 501 (3507) added so far); re-opening (prior size: 13724.8 KB)
+0003.655 (0) backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-plugins.zip.tmp: size is now: 17.50 MB
+0003.660 (0) Zip: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-plugins.zip.tmp: 3600 files added (on-disk size: 17910.8 KB)
+0003.662 (0) Zip: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-plugins.zip.tmp: 3700 files added (on-disk size: 17910.8 KB)
+0003.665 (0) Zip: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-plugins.zip.tmp: 3800 files added (on-disk size: 17910.8 KB)
+0003.667 (0) Zip: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-plugins.zip.tmp: 3900 files added (on-disk size: 17910.8 KB)
+0004.034 (0) Created plugins zip (0) - 18674.1 KB in 4 s (4689.3 KB/s) (sha1: 405d761ad279499ae86a35720ee8aa071d17676a, sha256: 1663e76d254597e0517895d8b4c6f97cad0430845ad35df5d8f5a7c64a0bc74e)
+0004.037 (0) Beginning creation of dump of themes (split every: 400 MB)
+0004.051 (0) Total entities for the zip file: 30 directories, 198 files (0 skipped as non-modified), 4 MB
+0004.054 (0) Zip: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-themes.zip.tmp: 100 files added (on-disk size: 0 KB)
+0004.213 (0) backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-themes.zip.tmp: size is now: 2.70 MB
+0004.245 (0) Created themes zip (0) - 2755.6 KB in 0.2 s (13324.1 KB/s) (sha1: d324a63e9bd4e97c093fe0dbb505698cdc5db882, sha256: 8465ef41c4d5da6c4b71444ea4c54159a7bb564e1f3a2b6a7481d46868e03b66)
+0004.247 (0) Exclusion option setting (uploads): backup*,*backups,backwpup*,wp-clone,snapshots
+0004.248 (0) Looking for candidates to back up in: /Applications/XAMPP/xamppfiles/htdocs/outdoors/wp-content/uploads
+0004.249 (0) finding files: 13988107_10209049168179441_4985269252835363743_o-2-1024x768.jpg: adding to list (1)
+0004.250 (0) finding files: 13988107_10209049168179441_4985269252835363743_o-2-150x150.jpg: adding to list (2)
+0004.251 (0) finding files: 13988107_10209049168179441_4985269252835363743_o-2-24x18.jpg: adding to list (3)
+0004.252 (0) finding files: 13988107_10209049168179441_4985269252835363743_o-2-300x225.jpg: adding to list (4)
+0004.252 (0) finding files: 13988107_10209049168179441_4985269252835363743_o-2-36x27.jpg: adding to list (5)
+0004.253 (0) finding files: 13988107_10209049168179441_4985269252835363743_o-2-48x36.jpg: adding to list (6)
+0004.254 (0) finding files: 13988107_10209049168179441_4985269252835363743_o-2-768x576.jpg: adding to list (7)
+0004.254 (0) finding files: 13988107_10209049168179441_4985269252835363743_o-2.jpg: adding to list (8)
+0004.255 (0) finding files: activities-1024x644.png: adding to list (9)
+0004.256 (0) finding files: activities-150x150.png: adding to list (10)
+0004.256 (0) finding files: activities-300x189.png: adding to list (11)
+0004.257 (0) finding files: activities-768x483.png: adding to list (12)
+0004.257 (0) finding files: activities-e1493654850286-1024x535.png: adding to list (13)
+0004.258 (0) finding files: activities-e1493654850286-150x150.png: adding to list (14)
+0004.258 (0) finding files: activities-e1493654850286-300x157.png: adding to list (15)
+0004.259 (0) finding files: activities-e1493654850286-768x401.png: adding to list (16)
+0004.259 (0) finding files: activities-e1493654850286.png: adding to list (17)
+0004.260 (0) finding files: activities-logo-150x150.png: adding to list (18)
+0004.260 (0) finding files: activities-logo-298x300.png: adding to list (19)
+0004.261 (0) finding files: activities-logo.png: adding to list (20)
+0004.261 (0) finding files: activities.png: adding to list (21)
+0004.262 (0) finding files: arrow-left-150x150.png: adding to list (22)
+0004.262 (0) finding files: arrow-left-24x7.png: adding to list (23)
+0004.263 (0) finding files: arrow-left-300x84.png: adding to list (24)
+0004.263 (0) finding files: arrow-left-36x10.png: adding to list (25)
+0004.264 (0) finding files: arrow-left-48x13.png: adding to list (26)
+0004.264 (0) finding files: arrow-left.png: adding to list (27)
+0004.265 (0) finding files: arrow-right-150x150.png: adding to list (28)
+0004.265 (0) finding files: arrow-right-24x7.png: adding to list (29)
+0004.266 (0) finding files: arrow-right-300x84.png: adding to list (30)
+0004.266 (0) finding files: arrow-right-36x10.png: adding to list (31)
+0004.267 (0) finding files: arrow-right-48x13.png: adding to list (32)
+0004.267 (0) finding files: arrow-right.png: adding to list (33)
+0004.267 (0) finding files: biking-150x150.jpg: adding to list (34)
+0004.268 (0) finding files: biking-300x169.jpg: adding to list (35)
+0004.268 (0) finding files: biking-768x432.jpg: adding to list (36)
+0004.268 (0) finding files: biking.jpg: adding to list (37)
+0004.269 (0) finding files: caving-1024x768.jpg: adding to list (38)
+0004.269 (0) finding files: caving-150x150.jpg: adding to list (39)
+0004.270 (0) finding files: caving-300x225.jpg: adding to list (40)
+0004.270 (0) finding files: caving-768x576.jpg: adding to list (41)
+0004.270 (0) finding files: caving.jpg: adding to list (42)
+0004.271 (0) finding files: clipboard-150x150.png: adding to list (43)
+0004.271 (0) finding files: clipboard.png: adding to list (44)
+0004.271 (0) finding files: compass-150x150.png: adding to list (45)
+0004.272 (0) finding files: compass-300x300.png: adding to list (46)
+0004.272 (0) finding files: compass.png: adding to list (47)
+0004.273 (0) finding files: contactbg-1024x585.png: adding to list (48)
+0004.273 (0) finding files: contactbg-150x150.png: adding to list (49)
+0004.273 (0) finding files: contactbg-24x14.png: adding to list (50)
+0004.274 (0) finding files: contactbg-300x171.png: adding to list (51)
+0004.274 (0) finding files: contactbg-36x21.png: adding to list (52)
+0004.274 (0) finding files: contactbg-48x27.png: adding to list (53)
+0004.274 (0) finding files: contactbg-768x439.png: adding to list (54)
+0004.274 (0) finding files: contactbg.png: adding to list (55)
+0004.274 (0) finding files: contactlogo-150x150.png: adding to list (56)
+0004.274 (0) finding files: contactlogo-24x24.png: adding to list (57)
+0004.274 (0) finding files: contactlogo-36x36.png: adding to list (58)
+0004.274 (0) finding files: contactlogo-48x48.png: adding to list (59)
+0004.274 (0) finding files: contactlogo.png: adding to list (60)
+0004.274 (0) finding files: createtripbg-1024x585.jpg: adding to list (61)
+0004.274 (0) finding files: createtripbg-150x150.jpg: adding to list (62)
+0004.274 (0) finding files: createtripbg-24x14.jpg: adding to list (63)
+0004.274 (0) finding files: createtripbg-300x171.jpg: adding to list (64)
+0004.274 (0) finding files: createtripbg-36x21.jpg: adding to list (65)
+0004.274 (0) finding files: createtripbg-48x27.jpg: adding to list (66)
+0004.274 (0) finding files: createtripbg-768x439.jpg: adding to list (67)
+0004.274 (0) finding files: createtripbg.jpg: adding to list (68)
+0004.274 (0) finding files: email-150x150.png: adding to list (69)
+0004.274 (0) finding files: email-24x24.png: adding to list (70)
+0004.274 (0) finding files: email-36x36.png: adding to list (71)
+0004.274 (0) finding files: email-48x48.png: adding to list (72)
+0004.274 (0) finding files: email.png: adding to list (73)
+0004.274 (0) finding files: emaillogo-150x95.png: adding to list (74)
+0004.274 (0) finding files: emaillogo-24x14.png: adding to list (75)
+0004.274 (0) finding files: emaillogo-36x21.png: adding to list (76)
+0004.274 (0) finding files: emaillogo-48x28.png: adding to list (77)
+0004.274 (0) finding files: emaillogo.png: adding to list (78)
+0004.274 (0) finding files: faq-mtn-1024x599.png: adding to list (79)
+0004.274 (0) finding files: faq-mtn-150x150.png: adding to list (80)
+0004.274 (0) finding files: faq-mtn-2-1024x548.png: adding to list (81)
+0004.274 (0) finding files: faq-mtn-2-150x150.png: adding to list (82)
+0004.274 (0) finding files: faq-mtn-2-24x13.png: adding to list (83)
+0004.274 (0) finding files: faq-mtn-2-300x161.png: adding to list (84)
+0004.274 (0) finding files: faq-mtn-2-36x19.png: adding to list (85)
+0004.274 (0) finding files: faq-mtn-2-48x26.png: adding to list (86)
+0004.274 (0) finding files: faq-mtn-2-768x411.png: adding to list (87)
+0004.274 (0) finding files: faq-mtn-2.png: adding to list (88)
+0004.274 (0) finding files: faq-mtn-24x14.png: adding to list (89)
+0004.274 (0) finding files: faq-mtn-300x176.png: adding to list (90)
+0004.274 (0) finding files: faq-mtn-36x21.png: adding to list (91)
+0004.274 (0) finding files: faq-mtn-48x28.png: adding to list (92)
+0004.274 (0) finding files: faq-mtn-768x449.png: adding to list (93)
+0004.274 (0) finding files: faq-mtn.png: adding to list (94)
+0004.274 (0) finding files: faqbg-1024x681.png: adding to list (95)
+0004.274 (0) finding files: faqbg-150x150.png: adding to list (96)
+0004.274 (0) finding files: faqbg-24x16.png: adding to list (97)
+0004.274 (0) finding files: faqbg-300x200.png: adding to list (98)
+0004.274 (0) finding files: faqbg-36x24.png: adding to list (99)
+0004.274 (0) finding files: faqbg-48x32.png: adding to list (100)
+0004.275 (0) finding files: faqbg-768x511.png: adding to list (101)
+0004.275 (0) finding files: faqbg.png: adding to list (102)
+0004.275 (0) finding files: formlogo-150x150.png: adding to list (103)
+0004.275 (0) finding files: formlogo-18x24.png: adding to list (104)
+0004.275 (0) finding files: formlogo-27x36.png: adding to list (105)
+0004.275 (0) finding files: formlogo-36x48.png: adding to list (106)
+0004.275 (0) finding files: formlogo.png: adding to list (107)
+0004.275 (0) finding files: green-mtn-1024x742.png: adding to list (108)
+0004.275 (0) finding files: green-mtn-150x150.png: adding to list (109)
+0004.275 (0) finding files: green-mtn-300x218.png: adding to list (110)
+0004.275 (0) finding files: green-mtn-768x557.png: adding to list (111)
+0004.275 (0) finding files: green-mtn-e1494528956363-1024x742.png: adding to list (112)
+0004.275 (0) finding files: green-mtn-e1494528956363-150x150.png: adding to list (113)
+0004.275 (0) finding files: green-mtn-e1494528956363-300x218.png: adding to list (114)
+0004.275 (0) finding files: green-mtn-e1494528956363-768x557.png: adding to list (115)
+0004.275 (0) finding files: green-mtn-e1494528956363.png: adding to list (116)
+0004.275 (0) finding files: green-mtn-e1494529613974-1024x663.png: adding to list (117)
+0004.275 (0) finding files: green-mtn-e1494529613974-150x150.png: adding to list (118)
+0004.275 (0) finding files: green-mtn-e1494529613974-300x194.png: adding to list (119)
+0004.275 (0) finding files: green-mtn-e1494529613974-768x497.png: adding to list (120)
+0004.275 (0) finding files: green-mtn-e1494529613974.png: adding to list (121)
+0004.275 (0) finding files: green-mtn.png: adding to list (122)
+0004.275 (0) finding files: greenodclogo-1024x806.png: adding to list (123)
+0004.275 (0) finding files: greenodclogo-150x150.png: adding to list (124)
+0004.275 (0) finding files: greenodclogo-24x19.png: adding to list (125)
+0004.275 (0) finding files: greenodclogo-300x236.png: adding to list (126)
+0004.275 (0) finding files: greenodclogo-36x28.png: adding to list (127)
+0004.275 (0) finding files: greenodclogo-48x38.png: adding to list (128)
+0004.275 (0) finding files: greenodclogo-768x605.png: adding to list (129)
+0004.275 (0) finding files: greenodclogo.png: adding to list (130)
+0004.275 (0) finding files: hiking-1024x684.jpg: adding to list (131)
+0004.275 (0) finding files: hiking-150x150.jpg: adding to list (132)
+0004.275 (0) finding files: hiking-300x200.jpg: adding to list (133)
+0004.275 (0) finding files: hiking-768x513.jpg: adding to list (134)
+0004.275 (0) finding files: hiking.jpg: adding to list (135)
+0004.275 (0) finding files: horsebackriding-150x150.jpg: adding to list (136)
+0004.275 (0) finding files: horsebackriding-300x200.jpg: adding to list (137)
+0004.275 (0) finding files: horsebackriding-768x512.jpg: adding to list (138)
+0004.275 (0) finding files: horsebackriding.jpg: adding to list (139)
+0004.275 (0) finding files: jk-150x150.png: adding to list (140)
+0004.275 (0) finding files: jk-24x18.png: adding to list (141)
+0004.275 (0) finding files: jk-300x219.png: adding to list (142)
+0004.275 (0) finding files: jk-36x26.png: adding to list (143)
+0004.275 (0) finding files: jk-48x35.png: adding to list (144)
+0004.275 (0) finding files: jk.png: adding to list (145)
+0004.275 (0) finding files: join-150x150.png: adding to list (146)
+0004.276 (0) finding files: join-298x300.png: adding to list (147)
+0004.276 (0) finding files: join.png: adding to list (148)
+0004.276 (0) finding files: joinlogo-150x150.png: adding to list (149)
+0004.276 (0) finding files: joinlogo-24x24.png: adding to list (150)
+0004.276 (0) finding files: joinlogo-36x36.png: adding to list (151)
+0004.276 (0) finding files: joinlogo-48x48.png: adding to list (152)
+0004.276 (0) finding files: joinlogo.png: adding to list (153)
+0004.276 (0) finding files: jr-150x150.png: adding to list (154)
+0004.276 (0) finding files: jr-24x18.png: adding to list (155)
+0004.276 (0) finding files: jr-300x219.png: adding to list (156)
+0004.276 (0) finding files: jr-36x26.png: adding to list (157)
+0004.276 (0) finding files: jr-48x35.png: adding to list (158)
+0004.276 (0) finding files: jr.png: adding to list (159)
+0004.276 (0) finding files: kayaking-1024x564.jpg: adding to list (160)
+0004.276 (0) finding files: kayaking-150x150.jpg: adding to list (161)
+0004.276 (0) finding files: kayaking-300x165.jpg: adding to list (162)
+0004.276 (0) finding files: kayaking-768x423.jpg: adding to list (163)
+0004.276 (0) finding files: kayaking.jpg: adding to list (164)
+0004.276 (0) finding files: kg-150x150.png: adding to list (165)
+0004.276 (0) finding files: kg-24x18.png: adding to list (166)
+0004.276 (0) finding files: kg-300x219.png: adding to list (167)
+0004.276 (0) finding files: kg-36x26.png: adding to list (168)
+0004.276 (0) finding files: kg-48x35.png: adding to list (169)
+0004.276 (0) finding files: kg.png: adding to list (170)
+0004.276 (0) finding files: lead-150x150.png: adding to list (171)
+0004.276 (0) finding files: lead-298x300.png: adding to list (172)
+0004.276 (0) finding files: lead.png: adding to list (173)
+0004.276 (0) finding files: leaders-mtn-1024x548.png: adding to list (174)
+0004.276 (0) finding files: leaders-mtn-150x150.png: adding to list (175)
+0004.276 (0) finding files: leaders-mtn-24x13.png: adding to list (176)
+0004.276 (0) finding files: leaders-mtn-300x160.png: adding to list (177)
+0004.276 (0) finding files: leaders-mtn-36x19.png: adding to list (178)
+0004.276 (0) finding files: leaders-mtn-48x26.png: adding to list (179)
+0004.276 (0) finding files: leaders-mtn-768x411.png: adding to list (180)
+0004.276 (0) finding files: leaders-mtn.png: adding to list (181)
+0004.276 (0) finding files: location-white-150x150.png: adding to list (182)
+0004.276 (0) finding files: location-white-24x24.png: adding to list (183)
+0004.276 (0) finding files: location-white-36x36.png: adding to list (184)
+0004.276 (0) finding files: location-white-48x48.png: adding to list (185)
+0004.276 (0) finding files: location-white.png: adding to list (186)
+0004.276 (0) finding files: locationlogo-150x150.png: adding to list (187)
+0004.276 (0) finding files: locationlogo-24x24.png: adding to list (188)
+0004.276 (0) finding files: locationlogo-36x36.png: adding to list (189)
+0004.276 (0) finding files: locationlogo-48x48.png: adding to list (190)
+0004.276 (0) finding files: locationlogo.png: adding to list (191)
+0004.276 (0) finding files: logo-24x19.png: adding to list (192)
+0004.276 (0) finding files: logo-36x28.png: adding to list (193)
+0004.276 (0) finding files: logo-48x38.png: adding to list (194)
+0004.276 (0) finding files: logo.png: adding to list (195)
+0004.276 (0) finding files: melol-150x150.jpg: adding to list (196)
+0004.276 (0) finding files: melol-24x24.jpg: adding to list (197)
+0004.276 (0) finding files: melol-300x300.jpg: adding to list (198)
+0004.276 (0) finding files: melol-36x36.jpg: adding to list (199)
+0004.276 (0) finding files: melol-48x48.jpg: adding to list (200)
+0004.277 (0) finding files: melol-768x768.jpg: adding to list (201)
+0004.277 (0) finding files: melol.jpg: adding to list (202)
+0004.277 (0) finding files: mission-bg-2-1024x638.png: adding to list (203)
+0004.277 (0) finding files: mission-bg-2-150x150.png: adding to list (204)
+0004.277 (0) finding files: mission-bg-2-300x187.png: adding to list (205)
+0004.277 (0) finding files: mission-bg-2-768x478.png: adding to list (206)
+0004.277 (0) finding files: mission-bg-2-e1493654417841-1024x638.png: adding to list (207)
+0004.277 (0) finding files: mission-bg-2-e1493654417841-150x150.png: adding to list (208)
+0004.277 (0) finding files: mission-bg-2-e1493654417841-300x187.png: adding to list (209)
+0004.277 (0) finding files: mission-bg-2-e1493654417841-768x478.png: adding to list (210)
+0004.277 (0) finding files: mission-bg-2-e1493654417841.png: adding to list (211)
+0004.277 (0) finding files: mission-bg-2.png: adding to list (212)
+0004.277 (0) finding files: mk-150x150.png: adding to list (213)
+0004.277 (0) finding files: mk-24x18.png: adding to list (214)
+0004.277 (0) finding files: mk-300x219.png: adding to list (215)
+0004.277 (0) finding files: mk-36x26.png: adding to list (216)
+0004.277 (0) finding files: mk-48x35.png: adding to list (217)
+0004.277 (0) finding files: mk.png: adding to list (218)
+0004.277 (0) finding files: mtn-logo-150x150.png: adding to list (219)
+0004.277 (0) finding files: mtn-logo-300x300.png: adding to list (220)
+0004.277 (0) finding files: mtn-logo-e1493605403938-150x150.png: adding to list (221)
+0004.277 (0) finding files: mtn-logo-e1493605403938-300x300.png: adding to list (222)
+0004.277 (0) finding files: mtn-logo-e1493605403938.png: adding to list (223)
+0004.277 (0) finding files: mtn-logo.png: adding to list (224)
+0004.277 (0) finding files: mtnrange-1024x192.png: adding to list (225)
+0004.277 (0) finding files: mtnrange-150x150.png: adding to list (226)
+0004.277 (0) finding files: mtnrange-300x56.png: adding to list (227)
+0004.277 (0) finding files: mtnrange-768x144.png: adding to list (228)
+0004.277 (0) finding files: mtnrange.png: adding to list (229)
+0004.277 (0) finding files: mtnrange.svg: adding to list (230)
+0004.277 (0) finding files: mute-150x150.png: adding to list (231)
+0004.277 (0) finding files: mute.png: adding to list (232)
+0004.277 (0) finding files: old_rag-1024x296.jpg: adding to list (233)
+0004.277 (0) finding files: old_rag-150x150.jpg: adding to list (234)
+0004.277 (0) finding files: old_rag-300x87.jpg: adding to list (235)
+0004.277 (0) finding files: old_rag-768x222.jpg: adding to list (236)
+0004.277 (0) finding files: old_rag.jpg: adding to list (237)
+0004.277 (0) finding files: participate-150x150.png: adding to list (238)
+0004.277 (0) finding files: participate-298x300.png: adding to list (239)
+0004.277 (0) finding files: participate.png: adding to list (240)
+0004.277 (0) finding files: rockclimbing-150x150.jpg: adding to list (241)
+0004.277 (0) finding files: rockclimbing-300x225.jpg: adding to list (242)
+0004.277 (0) finding files: rockclimbing-768x576.jpg: adding to list (243)
+0004.277 (0) finding files: rockclimbing.jpg: adding to list (244)
+0004.277 (0) finding files: Screen-Shot-2017-07-16-at-1.55.04-PM-1024x526.png: adding to list (245)
+0004.277 (0) finding files: Screen-Shot-2017-07-16-at-1.55.04-PM-150x150.png: adding to list (246)
+0004.278 (0) finding files: Screen-Shot-2017-07-16-at-1.55.04-PM-24x12.png: adding to list (247)
+0004.278 (0) finding files: Screen-Shot-2017-07-16-at-1.55.04-PM-300x154.png: adding to list (248)
+0004.278 (0) finding files: Screen-Shot-2017-07-16-at-1.55.04-PM-36x19.png: adding to list (249)
+0004.278 (0) finding files: Screen-Shot-2017-07-16-at-1.55.04-PM-48x25.png: adding to list (250)
+0004.278 (0) finding files: Screen-Shot-2017-07-16-at-1.55.04-PM-768x395.png: adding to list (251)
+0004.278 (0) finding files: Screen-Shot-2017-07-16-at-1.55.04-PM.png: adding to list (252)
+0004.278 (0) finding files: signinbg-1024x771.png: adding to list (253)
+0004.278 (0) finding files: signinbg-150x150.png: adding to list (254)
+0004.278 (0) finding files: signinbg-24x18.png: adding to list (255)
+0004.278 (0) finding files: signinbg-300x226.png: adding to list (256)
+0004.278 (0) finding files: signinbg-36x27.png: adding to list (257)
+0004.278 (0) finding files: signinbg-48x36.png: adding to list (258)
+0004.278 (0) finding files: signinbg-768x578.png: adding to list (259)
+0004.278 (0) finding files: signinbg.png: adding to list (260)
+0004.278 (0) finding files: signupbg-1024x585.png: adding to list (261)
+0004.278 (0) finding files: signupbg-150x150.png: adding to list (262)
+0004.278 (0) finding files: signupbg-24x14.png: adding to list (263)
+0004.278 (0) finding files: signupbg-300x171.png: adding to list (264)
+0004.278 (0) finding files: signupbg-36x21.png: adding to list (265)
+0004.278 (0) finding files: signupbg-48x27.png: adding to list (266)
+0004.278 (0) finding files: signupbg-768x439.png: adding to list (267)
+0004.278 (0) finding files: signupbg.png: adding to list (268)
+0004.278 (0) finding files: skydiving-1024x683.jpg: adding to list (269)
+0004.278 (0) finding files: skydiving-150x150.jpg: adding to list (270)
+0004.278 (0) finding files: skydiving-300x200.jpg: adding to list (271)
+0004.278 (0) finding files: skydiving-768x512.jpg: adding to list (272)
+0004.278 (0) finding files: skydiving.jpg: adding to list (273)
+0004.278 (0) finding files: snowboarding-1024x680.jpg: adding to list (274)
+0004.278 (0) finding files: snowboarding-150x150.jpg: adding to list (275)
+0004.278 (0) finding files: snowboarding-300x199.jpg: adding to list (276)
+0004.278 (0) finding files: snowboarding-768x510.jpg: adding to list (277)
+0004.278 (0) finding files: snowboarding.jpg: adding to list (278)
+0004.278 (0) finding files: speaker-150x150.png: adding to list (279)
+0004.278 (0) finding files: speaker.png: adding to list (280)
+0004.278 (0) finding files: UVA-Outdoors-Club-1.mp4: adding to list (281)
+0004.278 (0) finding files: UVA-Outdoors-Club.mp4: adding to list (282)
+0004.278 (0) finding files: UVA-Outdoors-Club.webm: adding to list (283)
+0004.278 (0) finding files: volunteering-1024x576.jpg: adding to list (284)
+0004.278 (0) finding files: volunteering-150x150.jpg: adding to list (285)
+0004.278 (0) finding files: volunteering-300x169.jpg: adding to list (286)
+0004.278 (0) finding files: volunteering-768x432.jpg: adding to list (287)
+0004.278 (0) finding files: volunteering.jpg: adding to list (288)
+0004.278 (0) finding files: white-trees-150x150.png: adding to list (289)
+0004.278 (0) finding files: white-trees-245x300.png: adding to list (290)
+0004.278 (0) finding files: white-trees-768x941.png: adding to list (291)
+0004.278 (0) finding files: white-trees-835x1024.png: adding to list (292)
+0004.278 (0) finding files: white-trees.png: adding to list (293)
+0004.278 (0) Beginning creation of dump of uploads (split every: 400 MB)
+0004.287 (0) Total entities for the zip file: 0 directories, 293 files (0 skipped as non-modified), 185.2 MB
+0004.289 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 25 MB added on this batch (25.3 MB, 293 files batched, 42 (42) added so far); re-opening (prior size: 0 KB)
+0004.498 (0) backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-uploads.zip.tmp: size is now: 25.30 MB
+0004.502 (0) A useful amount of data was added after this amount of zip processing: 1.1 s (normalised: 1.1 s, rate: 24097.6 KB/s)
+0004.504 (0) Performance is good - will increase the amount of data we attempt to batch (time=1.0741670131683, normalised_time=1.0623483953749, max_time=-1, data points known=0, old_max_bytes=26214400, new_max_bytes=148055384)
+0004.508 (0) Zip: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-uploads.zip.tmp: 100 files added (on-disk size: 25893.1 KB)
+0004.511 (0) Zip: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-uploads.zip.tmp: 200 files added (on-disk size: 25893.1 KB)
+0004.513 (0) Adding batch to zip file (UpdraftPlus_BinZip): over 141.2 MB added on this batch (157.2 MB, 293 files batched, 241 (283) added so far); re-opening (prior size: 25893.1 KB)
+0006.075 (0) backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-uploads.zip.tmp: size is now: 182.50 MB
+0006.079 (0) A useful amount of data was added after this amount of zip processing: 1.7 s (normalised: 1.5 s, rate: 97504.6 KB/s)
+0006.081 (0) Performance is good - will increase the amount of data we attempt to batch (time=1.6507279872894, normalised_time=1.4828569744479, max_time=-1, data points known=0, old_max_bytes=148055384, new_max_bytes=209715200)
+0008.047 (0) Created uploads zip (0) - 189662.8 KB in 3.8 s (50334.2 KB/s) (sha1: 689db8481de11be1f28a5bc0526904a2882d57c6, sha256: cb8be23e08b54e47bb4e18698d2db7751ded07cc79ebbc9fc777a334abc632de)
+0008.050 (0) Beginning backup of other directories found in the content directory (index: 0)
+0008.051 (0) Exclusion option setting (others): upgrade,cache,updraft,backup*,*backups,mysql.sql,debug.log
+0008.052 (0) Looking for candidates to back up in: /Applications/XAMPP/xamppfiles/htdocs/outdoors/wp-content
+0008.052 (0) finding files: .DS_Store: adding to list (1)
+0008.053 (0) finding files: Cimy_User_Extra_Fields: adding to list (2)
+0008.053 (0) finding files: index.php: adding to list (3)
+0008.054 (0) finding files: plugins: skipping: this is the plugins directory
+0008.055 (0) finding files: themes: skipping: this is the themes directory
+0008.055 (0) finding files: updraft: skipping: this is the updraft directory
+0008.056 (0) finding files: upgrade: skipping: excluded by options
+0008.056 (0) finding files: uploads: skipping: this is the uploads directory
+0008.059 (0) Total entities for the zip file: 1 directories, 2 files (0 skipped as non-modified), 0 MB
+0008.065 (0) backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-others.zip.tmp: size is now: 0.00 MB
+0008.070 (0) Created others zip (0) - 1.1 KB in 0 s (86.3 KB/s) (sha1: bffb5528f81d2a1f0020e77c1b32d27d139a1fa5, sha256: ca4424481693f4f1d79648709476b066ced988b5442c14992d8849fd6231b191)
+0008.074 (0) Saving backup status to database (elements: 8)
+0008.076 (0) Beginning creation of database dump (WordPress DB)
+0008.080 (0) Testing: /usr/local/bin/mysqldump
+0008.148 (0) Binary mysqldump: error (code: 2)
+0008.160 (0) Table wp_options: Total expected rows (approximate): 270
+0008.216 (0) Table wp_options: Total rows added: 272 in 0.05 seconds
+0008.218 (0) Table wp_options: finishing file (backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db-table-wp_options.table.gz - 342.8 KB)
+0008.223 (0) Table wp_users: Total expected rows (approximate): 5
+0008.226 (0) Table wp_users: Total rows added: 5 in 0.00 seconds
+0008.232 (0) Table wp_users: finishing file (backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db-table-wp_users.table.gz - 0.8 KB)
+0008.236 (0) Table wp_usermeta: Total expected rows (approximate): 89
+0008.240 (0) Table wp_usermeta: Total rows added: 94 in 0.00 seconds
+0008.242 (0) Table wp_usermeta: finishing file (backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db-table-wp_usermeta.table.gz - 2.3 KB)
+0008.246 (0) Table wp_commentmeta: Total expected rows (approximate): 0
+0008.248 (0) Table wp_commentmeta: Total rows added: 0 in 0.00 seconds
+0008.249 (0) Table wp_commentmeta: finishing file (backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db-table-wp_commentmeta.table.gz - 0.4 KB)
+0008.252 (0) Table wp_comments: Total expected rows (approximate): 0
+0008.254 (0) Table wp_comments: Total rows added: 1 in 0.00 seconds
+0008.257 (0) Table wp_comments: finishing file (backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db-table-wp_comments.table.gz - 0.7 KB)
+0008.260 (0) Table wp_links: Total expected rows (approximate): 0
+0008.262 (0) Table wp_links: Total rows added: 0 in 0.00 seconds
+0008.263 (0) Table wp_links: finishing file (backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db-table-wp_links.table.gz - 0.4 KB)
+0008.266 (0) Table wp_postmeta: Total expected rows (approximate): 935
+0008.280 (0) Table wp_postmeta: Total rows added: 935 in 0.01 seconds
+0008.281 (0) Table wp_postmeta: finishing file (backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db-table-wp_postmeta.table.gz - 23.2 KB)
+0008.285 (0) Table wp_posts: Total expected rows (approximate): 193
+0008.297 (0) Table wp_posts: Total rows added: 193 in 0.01 seconds
+0008.300 (0) Table wp_posts: finishing file (backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db-table-wp_posts.table.gz - 6.8 KB)
+0008.304 (0) Table wp_term_relationships: Total expected rows (approximate): 12
+0008.307 (0) Table wp_term_relationships: Total rows added: 13 in 0.00 seconds
+0008.310 (0) Table wp_term_relationships: finishing file (backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db-table-wp_term_relationships.table.gz - 0.4 KB)
+0008.313 (0) Table wp_term_taxonomy: Total expected rows (approximate): 2
+0008.315 (0) Table wp_term_taxonomy: Total rows added: 3 in 0.00 seconds
+0008.316 (0) Table wp_term_taxonomy: finishing file (backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db-table-wp_term_taxonomy.table.gz - 0.4 KB)
+0008.320 (0) Table wp_termmeta: Total expected rows (approximate): 0
+0008.322 (0) Table wp_termmeta: Total rows added: 0 in 0.00 seconds
+0008.323 (0) Table wp_termmeta: finishing file (backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db-table-wp_termmeta.table.gz - 0.4 KB)
+0008.327 (0) Table wp_terms: Total expected rows (approximate): 2
+0008.329 (0) Table wp_terms: Total rows added: 3 in 0.00 seconds
+0008.329 (0) Table wp_terms: finishing file (backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db-table-wp_terms.table.gz - 0.4 KB)
+0008.331 (0) Skipping table (lacks our prefix (wp_)): m_adventure
+0008.331 (0) Skipping table (lacks our prefix (wp_)): m_attendee
+0008.332 (0) Skipping table (lacks our prefix (wp_)): m_location
+0008.334 (0) Table wp_cimy_uef_data: Total expected rows (approximate): 0
+0008.337 (0) Table wp_cimy_uef_data: Total rows added: 0 in 0.00 seconds
+0008.337 (0) Table wp_cimy_uef_data: finishing file (backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db-table-wp_cimy_uef_data.table.gz - 0.3 KB)
+0008.341 (0) Table wp_cimy_uef_fields: Total expected rows (approximate): 0
+0008.342 (0) Table wp_cimy_uef_fields: Total rows added: 0 in 0.00 seconds
+0008.343 (0) Table wp_cimy_uef_fields: finishing file (backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db-table-wp_cimy_uef_fields.table.gz - 0.4 KB)
+0008.346 (0) Table wp_cimy_uef_wp_fields: Total expected rows (approximate): 2
+0008.349 (0) Table wp_cimy_uef_wp_fields: Total rows added: 2 in 0.00 seconds
+0008.349 (0) Table wp_cimy_uef_wp_fields: finishing file (backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db-table-wp_cimy_uef_wp_fields.table.gz - 0.6 KB)
+0008.353 (0) Table wp_dmm_menu: Total expected rows (approximate): 0
+0008.354 (0) Table wp_dmm_menu: Total rows added: 1 in 0.00 seconds
+0008.355 (0) Table wp_dmm_menu: finishing file (backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db-table-wp_dmm_menu.table.gz - 0.3 KB)
+0008.358 (0) Table wp_rm_fields: Total expected rows (approximate): 20
+0008.362 (0) Table wp_rm_fields: Total rows added: 19 in 0.00 seconds
+0008.367 (0) Table wp_rm_fields: finishing file (backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db-table-wp_rm_fields.table.gz - 1.5 KB)
+0008.371 (0) Table wp_rm_forms: Total expected rows (approximate): 2
+0008.374 (0) Table wp_rm_forms: Total rows added: 3 in 0.00 seconds
+0008.380 (0) Table wp_rm_forms: finishing file (backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db-table-wp_rm_forms.table.gz - 2.2 KB)
+0008.384 (0) Table wp_rm_front_users: Total expected rows (approximate): 0
+0008.386 (0) Table wp_rm_front_users: Total rows added: 0 in 0.00 seconds
+0008.392 (0) Table wp_rm_front_users: finishing file (backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db-table-wp_rm_front_users.table.gz - 0.3 KB)
+0008.396 (0) Table wp_rm_notes: Total expected rows (approximate): 0
+0008.398 (0) Table wp_rm_notes: Total rows added: 0 in 0.00 seconds
+0008.400 (0) Table wp_rm_notes: finishing file (backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db-table-wp_rm_notes.table.gz - 0.4 KB)
+0008.403 (0) Table wp_rm_paypal_fields: Total expected rows (approximate): 0
+0008.406 (0) Table wp_rm_paypal_fields: Total rows added: 0 in 0.00 seconds
+0008.409 (0) Table wp_rm_paypal_fields: finishing file (backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db-table-wp_rm_paypal_fields.table.gz - 0.4 KB)
+0008.412 (0) Table wp_rm_paypal_logs: Total expected rows (approximate): 0
+0008.415 (0) Table wp_rm_paypal_logs: Total rows added: 0 in 0.00 seconds
+0008.421 (0) Table wp_rm_paypal_logs: finishing file (backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db-table-wp_rm_paypal_logs.table.gz - 0.4 KB)
+0008.425 (0) Table wp_rm_sent_mails: Total expected rows (approximate): 0
+0008.428 (0) Table wp_rm_sent_mails: Total rows added: 0 in 0.00 seconds
+0008.438 (0) Table wp_rm_sent_mails: finishing file (backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db-table-wp_rm_sent_mails.table.gz - 0.4 KB)
+0008.441 (0) Table wp_rm_sessions: Total expected rows (approximate): 3
+0008.445 (0) Table wp_rm_sessions: Total rows added: 3 in 0.00 seconds
+0008.449 (0) Table wp_rm_sessions: finishing file (backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db-table-wp_rm_sessions.table.gz - 6.9 KB)
+0008.452 (0) Table wp_rm_stats: Total expected rows (approximate): 185
+0008.459 (0) Table wp_rm_stats: Total rows added: 194 in 0.01 seconds
+0008.467 (0) Table wp_rm_stats: finishing file (backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db-table-wp_rm_stats.table.gz - 2 KB)
+0008.470 (0) Table wp_rm_submission_fields: Total expected rows (approximate): 24
+0008.473 (0) Table wp_rm_submission_fields: Total rows added: 26 in 0.00 seconds
+0008.474 (0) Table wp_rm_submission_fields: finishing file (backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db-table-wp_rm_submission_fields.table.gz - 0.8 KB)
+0008.477 (0) Table wp_rm_submissions: Total expected rows (approximate): 4
+0008.480 (0) Table wp_rm_submissions: Total rows added: 4 in 0.00 seconds
+0008.482 (0) Table wp_rm_submissions: finishing file (backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db-table-wp_rm_submissions.table.gz - 1.2 KB)
+0008.485 (0) backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db-table-wp_options.table.gz (1/30): adding to final database dump
+0008.530 (0) backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db-table-wp_users.table.gz (2/30): adding to final database dump
+0008.531 (0) backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db-table-wp_usermeta.table.gz (3/30): adding to final database dump
+0008.533 (0) backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db-table-wp_commentmeta.table.gz (4/30): adding to final database dump
+0008.533 (0) backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db-table-wp_comments.table.gz (5/30): adding to final database dump
+0008.534 (0) backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db-table-wp_links.table.gz (6/30): adding to final database dump
+0008.535 (0) backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db-table-wp_postmeta.table.gz (7/30): adding to final database dump
+0008.542 (0) backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db-table-wp_posts.table.gz (8/30): adding to final database dump
+0008.544 (0) backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db-table-wp_term_relationships.table.gz (9/30): adding to final database dump
+0008.545 (0) backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db-table-wp_term_taxonomy.table.gz (10/30): adding to final database dump
+0008.546 (0) backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db-table-wp_termmeta.table.gz (11/30): adding to final database dump
+0008.547 (0) backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db-table-wp_terms.table.gz (12/30): adding to final database dump
+0008.548 (0) backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db-table-wp_cimy_uef_data.table.gz (13/30): adding to final database dump
+0008.549 (0) backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db-table-wp_cimy_uef_fields.table.gz (14/30): adding to final database dump
+0008.550 (0) backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db-table-wp_cimy_uef_wp_fields.table.gz (15/30): adding to final database dump
+0008.551 (0) backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db-table-wp_dmm_menu.table.gz (16/30): adding to final database dump
+0008.551 (0) backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db-table-wp_rm_fields.table.gz (17/30): adding to final database dump
+0008.552 (0) backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db-table-wp_rm_forms.table.gz (18/30): adding to final database dump
+0008.553 (0) backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db-table-wp_rm_front_users.table.gz (19/30): adding to final database dump
+0008.554 (0) backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db-table-wp_rm_notes.table.gz (20/30): adding to final database dump
+0008.555 (0) backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db-table-wp_rm_paypal_fields.table.gz (21/30): adding to final database dump
+0008.556 (0) backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db-table-wp_rm_paypal_logs.table.gz (22/30): adding to final database dump
+0008.556 (0) backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db-table-wp_rm_sent_mails.table.gz (23/30): adding to final database dump
+0008.557 (0) backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db-table-wp_rm_sessions.table.gz (24/30): adding to final database dump
+0008.559 (0) backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db-table-wp_rm_stats.table.gz (25/30): adding to final database dump
+0008.560 (0) backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db-table-wp_rm_submission_fields.table.gz (26/30): adding to final database dump
+0008.561 (0) backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db-table-wp_rm_submissions.table.gz (27/30): adding to final database dump
+0008.562 (0) backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db.gz: finished writing out complete database file (376 KB)
+0008.572 (0) Total database tables backed up: 27 (backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db.gz, size: 400157, sha256)
+0008.577 (0) backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-plugins.zip: plugins: This file has not yet been successfully uploaded: will queue
+0008.578 (0) backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-themes.zip: themes: This file has not yet been successfully uploaded: will queue
+0008.579 (0) backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-uploads.zip: uploads: This file has not yet been successfully uploaded: will queue
+0008.580 (0) backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-others.zip: others: This file has not yet been successfully uploaded: will queue
+0008.580 (0) backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db.gz: db: This file has not yet been successfully uploaded: will queue
+0008.581 (0) Saving backup history. Total backup size: 206.5 MB
+0008.583 (0) Requesting upload of the files that have not yet been successfully uploaded (5)
+0008.585 (0) Cloud backup selection (1/1): dropbox (last)
+0008.586 (0) Beginning dispatch of backup to remote (dropbox)
+0008.586 (0) Dropbox: begin cloud upload (using API version 2 with OAuth v2 token)
+0008.590 (0) Dropbox: access gained; setting chunk size to: 1024 KB
+0009.464 (0) Dropbox quota usage: used=203.9 MB, total=2048 MB, available=1844.1 MB
+0009.465 (0) Dropbox: Attempt to upload: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-plugins.zip to: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-plugins.zip
+0011.774 (0) Dropbox chunked upload: 5.5 % uploaded (AAAAAAAAAA15zfcbKVHSqw, 1048576, 2560 KB)
+0019.760 (0) Dropbox chunked upload: 19.2 % uploaded (AAAAAAAAAA15zfcbKVHSqw, 3670016, 2560 KB)
+0036.556 (0) Dropbox chunked upload: 32.9 % uploaded (AAAAAAAAAA15zfcbKVHSqw, 6291456, 2560 KB)
+0056.694 (0) Dropbox chunked upload: 46.6 % uploaded (AAAAAAAAAA15zfcbKVHSqw, 8912896, 2560 KB)
+0081.612 (0) Dropbox chunked upload: 60.3 % uploaded (AAAAAAAAAA15zfcbKVHSqw, 11534336, 2560 KB)
+0087.523 (0) Dropbox chunked upload: 74 % uploaded (AAAAAAAAAA15zfcbKVHSqw, 14155776, 3584 KB)
+0096.767 (0) Dropbox chunked upload: 93.2 % uploaded (AAAAAAAAAA15zfcbKVHSqw, 17825792, 3072 KB)
+0102.704 (0) Dropbox chunked upload: 100 % uploaded (AAAAAAAAAA15zfcbKVHSqw, 19122250, 3072 KB)
+0105.224 (0) Recording as successfully uploaded: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-plugins.zip (3b9924686c6dc5a90b8f2dde613607e7)
+0105.229 (0) Deleting local file: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-plugins.zip: OK
+0105.230 (0) Dropbox: File upload success (backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-plugins.zip): 18674 KB in 95s (195 KB/s)
+0105.562 (0) Dropbox quota usage: used=222.1 MB, total=2048 MB, available=1825.9 MB
+0105.564 (0) Dropbox: Attempt to upload: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-themes.zip to: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-themes.zip
+0114.586 (0) Dropbox chunked upload: 100 % uploaded (AAAAAAAAAA4pdwaSkhdSZQ, 2821707, 3072 KB)
+0117.245 (0) Recording as successfully uploaded: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-themes.zip (e6e0bcaeb5627938161462c00f3c5ac1)
+0117.249 (0) Deleting local file: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-themes.zip: OK
+0117.250 (0) Dropbox: File upload success (backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-themes.zip): 2755 KB in 11s (235 KB/s)
+0117.730 (0) Dropbox quota usage: used=224.8 MB, total=2048 MB, available=1823.2 MB
+0117.732 (0) Dropbox: Attempt to upload: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-uploads.zip to: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-uploads.zip
+0140.393 (0) Dropbox chunked upload: 1.6 % uploaded (AAAAAAAAAA_LmpqSL0-I0Q, 3145728, 3072 KB)
+0153.476 (0) Dropbox chunked upload: 3.2 % uploaded (AAAAAAAAAA_LmpqSL0-I0Q, 6291456, 3072 KB)
+0170.149 (0) Dropbox chunked upload: 4.9 % uploaded (AAAAAAAAAA_LmpqSL0-I0Q, 9437184, 3072 KB)
+0177.258 (0) Dropbox chunked upload: 6.5 % uploaded (AAAAAAAAAA_LmpqSL0-I0Q, 12582912, 3584 KB)
+0184.229 (0) Dropbox chunked upload: 8.4 % uploaded (AAAAAAAAAA_LmpqSL0-I0Q, 16252928, 4608 KB)
+0195.338 (0) Dropbox chunked upload: 10.8 % uploaded (AAAAAAAAAA_LmpqSL0-I0Q, 20971520, 4608 KB)
+0205.930 (0) Dropbox chunked upload: 13.2 % uploaded (AAAAAAAAAA_LmpqSL0-I0Q, 25690112, 4608 KB)
+0219.425 (0) Dropbox chunked upload: 15.7 % uploaded (AAAAAAAAAA_LmpqSL0-I0Q, 30408704, 4608 KB)
+0229.952 (0) Dropbox chunked upload: 18.1 % uploaded (AAAAAAAAAA_LmpqSL0-I0Q, 35127296, 4608 KB)
+0240.889 (0) Dropbox chunked upload: 20.5 % uploaded (AAAAAAAAAA_LmpqSL0-I0Q, 39845888, 4608 KB)
+0251.255 (0) Dropbox chunked upload: 22.9 % uploaded (AAAAAAAAAA_LmpqSL0-I0Q, 44564480, 4608 KB)
+0263.683 (0) The scheduled resumption is within 45 seconds - will reschedule
+0263.685 (0) Rescheduling resumption 1: moving to 345 seconds from now (1502505670)
+0263.688 (0) To decrease the likelihood of overlaps, increasing resumption interval to: 300 + 45 = 345
+0263.688 (0) Dropbox chunked upload: 25.4 % uploaded (AAAAAAAAAA_LmpqSL0-I0Q, 49283072, 4608 KB)
+0276.887 (0) Dropbox chunked upload: 27.8 % uploaded (AAAAAAAAAA_LmpqSL0-I0Q, 54001664, 4608 KB)
+0302.372 (0) Dropbox chunked upload: 30.2 % uploaded (AAAAAAAAAA_LmpqSL0-I0Q, 58720256, 4608 KB)
+0313.655 (0) Dropbox chunked upload: 32.7 % uploaded (AAAAAAAAAA_LmpqSL0-I0Q, 63438848, 4608 KB)
+0323.693 (0) The time we have been running (323.7) is approaching the resumption interval (345) - increasing resumption interval to 354
+0323.695 (0) Dropbox chunked upload: 35.1 % uploaded (AAAAAAAAAA_LmpqSL0-I0Q, 68157440, 4608 KB)
+0334.547 (0) The time we have been running (334.5) is approaching the resumption interval (354) - increasing resumption interval to 365
+0334.549 (0) Dropbox chunked upload: 37.5 % uploaded (AAAAAAAAAA_LmpqSL0-I0Q, 72876032, 4608 KB)
+0346.816 (0) The time we have been running (346.8) is approaching the resumption interval (365) - increasing resumption interval to 377
+0346.818 (0) Dropbox chunked upload: 40 % uploaded (AAAAAAAAAA_LmpqSL0-I0Q, 77594624, 4608 KB)
+0357.877 (0) The time we have been running (357.9) is approaching the resumption interval (377) - increasing resumption interval to 388
+0357.879 (0) Dropbox chunked upload: 42.4 % uploaded (AAAAAAAAAA_LmpqSL0-I0Q, 82313216, 4608 KB)
+0383.086 (0) The time we have been running (383.1) is approaching the resumption interval (388) - increasing resumption interval to 414
+0383.087 (0) Dropbox chunked upload: 44.8 % uploaded (AAAAAAAAAA_LmpqSL0-I0Q, 87031808, 4608 KB)
+0395.380 (0) The time we have been running (395.4) is approaching the resumption interval (414) - increasing resumption interval to 426
+0395.381 (0) Dropbox chunked upload: 47.2 % uploaded (AAAAAAAAAA_LmpqSL0-I0Q, 91750400, 4608 KB)
+0414.628 (0) The time we have been running (414.6) is approaching the resumption interval (426) - increasing resumption interval to 445
+0414.630 (0) Dropbox chunked upload: 49.7 % uploaded (AAAAAAAAAA_LmpqSL0-I0Q, 96468992, 4608 KB)
+0432.232 (0) The time we have been running (432.2) is approaching the resumption interval (445) - increasing resumption interval to 463
+0432.234 (0) Dropbox chunked upload: 52.1 % uploaded (AAAAAAAAAA_LmpqSL0-I0Q, 101187584, 4608 KB)
+0458.045 (0) The time we have been running (458) is approaching the resumption interval (463) - increasing resumption interval to 489
+0458.047 (0) Dropbox chunked upload: 54.5 % uploaded (AAAAAAAAAA_LmpqSL0-I0Q, 105906176, 4608 KB)
+0489.557 (0) The time we have been running (489.6) is approaching the resumption interval (489) - increasing resumption interval to 520
+0489.558 (0) Dropbox chunked upload: 57 % uploaded (AAAAAAAAAA_LmpqSL0-I0Q, 110624768, 4608 KB)
+0520.889 (0) The time we have been running (520.9) is approaching the resumption interval (520) - increasing resumption interval to 551
+0520.891 (0) Dropbox chunked upload: 59.4 % uploaded (AAAAAAAAAA_LmpqSL0-I0Q, 115343360, 4608 KB)
+0532.875 (0) The time we have been running (532.9) is approaching the resumption interval (551) - increasing resumption interval to 563
+0532.877 (0) Dropbox chunked upload: 61.8 % uploaded (AAAAAAAAAA_LmpqSL0-I0Q, 120061952, 4608 KB)
+0546.520 (0) The time we have been running (546.5) is approaching the resumption interval (563) - increasing resumption interval to 577
+0546.522 (0) Dropbox chunked upload: 64.2 % uploaded (AAAAAAAAAA_LmpqSL0-I0Q, 124780544, 4608 KB)
+0557.417 (0) The time we have been running (557.4) is approaching the resumption interval (577) - increasing resumption interval to 588
+0557.420 (0) Dropbox chunked upload: 66.7 % uploaded (AAAAAAAAAA_LmpqSL0-I0Q, 129499136, 4608 KB)
+0580.970 (0) The time we have been running (581) is approaching the resumption interval (588) - increasing resumption interval to 611
+0580.972 (0) The scheduled resumption is within 45 seconds - will reschedule
+0580.974 (0) Rescheduling resumption 1: moving to 656 seconds from now (1502506298)
+0580.976 (0) To decrease the likelihood of overlaps, increasing resumption interval to: 611 + 45 = 656
+0580.977 (0) Dropbox chunked upload: 69.1 % uploaded (AAAAAAAAAA_LmpqSL0-I0Q, 134217728, 4608 KB)
+0589.736 (0) Dropbox chunked upload: 71.5 % uploaded (AAAAAAAAAA_LmpqSL0-I0Q, 138936320, 4608 KB)
+0616.359 (0) Dropbox chunked upload: 74 % uploaded (AAAAAAAAAA_LmpqSL0-I0Q, 143654912, 4608 KB)
+0630.729 (0) The time we have been running (630.7) is approaching the resumption interval (656) - increasing resumption interval to 661
+0630.731 (0) Dropbox chunked upload: 76.4 % uploaded (AAAAAAAAAA_LmpqSL0-I0Q, 148373504, 4608 KB)
+0646.274 (0) The time we have been running (646.3) is approaching the resumption interval (661) - increasing resumption interval to 677
+0646.275 (0) Dropbox chunked upload: 78.8 % uploaded (AAAAAAAAAA_LmpqSL0-I0Q, 153092096, 4608 KB)
+0657.813 (0) The time we have been running (657.8) is approaching the resumption interval (677) - increasing resumption interval to 688
+0657.815 (0) Dropbox chunked upload: 81.3 % uploaded (AAAAAAAAAA_LmpqSL0-I0Q, 157810688, 4608 KB)
+0672.935 (0) The time we have been running (672.9) is approaching the resumption interval (688) - increasing resumption interval to 703
+0672.937 (0) Dropbox chunked upload: 83.7 % uploaded (AAAAAAAAAA_LmpqSL0-I0Q, 162529280, 4608 KB)
+0687.019 (0) The time we have been running (687) is approaching the resumption interval (703) - increasing resumption interval to 718
+0687.021 (0) Dropbox chunked upload: 86.1 % uploaded (AAAAAAAAAA_LmpqSL0-I0Q, 167247872, 4608 KB)
+0700.540 (0) The time we have been running (700.5) is approaching the resumption interval (718) - increasing resumption interval to 731
+0700.542 (0) Dropbox chunked upload: 88.5 % uploaded (AAAAAAAAAA_LmpqSL0-I0Q, 171966464, 4608 KB)
+0710.840 (0) The time we have been running (710.8) is approaching the resumption interval (731) - increasing resumption interval to 741
+0710.841 (0) Dropbox chunked upload: 91 % uploaded (AAAAAAAAAA_LmpqSL0-I0Q, 176685056, 4608 KB)
+0721.018 (0) The time we have been running (721) is approaching the resumption interval (741) - increasing resumption interval to 752
+0721.020 (0) Dropbox chunked upload: 93.4 % uploaded (AAAAAAAAAA_LmpqSL0-I0Q, 181403648, 4608 KB)
+0731.276 (0) The time we have been running (731.3) is approaching the resumption interval (752) - increasing resumption interval to 762
+0731.277 (0) Dropbox chunked upload: 95.8 % uploaded (AAAAAAAAAA_LmpqSL0-I0Q, 186122240, 4608 KB)
+0742.122 (0) The time we have been running (742.1) is approaching the resumption interval (762) - increasing resumption interval to 773
+0742.124 (0) Dropbox chunked upload: 98.3 % uploaded (AAAAAAAAAA_LmpqSL0-I0Q, 190840832, 4608 KB)
+0750.106 (0) The time we have been running (750.1) is approaching the resumption interval (773) - increasing resumption interval to 781
+0750.107 (0) Dropbox chunked upload: 100 % uploaded (AAAAAAAAAA_LmpqSL0-I0Q, 194214758, 4608 KB)
+0751.783 (0) Recording as successfully uploaded: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-uploads.zip (5720a9f782f563b69984516e8eef5b38)
+0751.799 (0) Deleting local file: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-uploads.zip: OK
+0751.800 (0) Dropbox: File upload success (backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-uploads.zip): 189662 KB in 634s (299 KB/s)
+0752.491 (0) Dropbox quota usage: used=410.1 MB, total=2048 MB, available=1637.9 MB
+0752.493 (0) Dropbox: Attempt to upload: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-others.zip to: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-others.zip
+0752.966 (0) The time we have been running (753) is approaching the resumption interval (781) - increasing resumption interval to 783
+0752.968 (0) Dropbox chunked upload: 100 % uploaded (AAAAAAAAABAumpITJEpPUQ, 1098, 4608 KB)
+0754.573 (0) Recording as successfully uploaded: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-others.zip (a1c4629f3871fa079317e33cd0aa8bfa)
+0754.577 (0) Deleting local file: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-others.zip: OK
+0754.577 (0) Dropbox: File upload success (backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-others.zip): 1 KB in 2s (0 KB/s)
+0754.890 (0) Dropbox quota usage: used=410.1 MB, total=2048 MB, available=1637.9 MB
+0754.891 (0) Dropbox: Attempt to upload: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db.gz to: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db.gz
+0756.607 (0) The time we have been running (756.6) is approaching the resumption interval (783) - increasing resumption interval to 787
+0756.609 (0) Dropbox chunked upload: 100 % uploaded (AAAAAAAAABECIk0FmvEAcQ, 400157, 4608 KB)
+0757.877 (0) Recording as successfully uploaded: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db.gz (f12b7de2e4cb3fc9ef96f44dc36b0e11)
+0757.880 (0) Deleting local file: backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db.gz: OK
+0757.881 (0) Dropbox: File upload success (backup_2017-08-12-0231_Outdoors_at_UVA_524b37049caa-db.gz): 390 KB in 2s (130 KB/s)
+0757.883 (0) Retain: beginning examination of existing backup sets; user setting: retain_files=2, retain_db=2
+0757.884 (0) Number of backup sets in history: 2; groups (db): 1
+0757.885 (0) Examining (for databases) backup set with group_id=0, nonce=524b37049caa, datestamp=1502505061 (Aug 12 2017 02:31:01)
+0757.885 (0) This backup set is the backup set just made, so will not be deleted.
+0757.886 (0) Examining (for databases) backup set with group_id=0, nonce=1c21cb3fbfce, datestamp=1497449088 (Jun 14 2017 14:04:48)
+0757.886 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0757.887 (0) Number of backup sets in history: 2; groups (files): 1
+0757.888 (0) Examining (for files) backup set with nonce=524b37049caa, datestamp=1502505061 (Aug 12 2017 02:31:01)
+0757.888 (0) This backup set is the backup set just made, so will not be deleted.
+0757.889 (0) This backup set is the backup set just made, so will not be deleted.
+0757.889 (0) This backup set is the backup set just made, so will not be deleted.
+0757.889 (0) This backup set is the backup set just made, so will not be deleted.
+0757.889 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0757.890 (0) Examining (for files) backup set with nonce=1c21cb3fbfce, datestamp=1497449088 (Jun 14 2017 14:04:48)
+0757.890 (0) This backup set remains non-empty (f=1/d=1); will retain in history
+0757.891 (0) Retain: saving new backup history (sets now: 2) and finishing retain operation
+0757.893 (0) Resume backup (524b37049caa, 0): finish run
+0757.895 (0) Decremented the semaphore (fd) by 1
+0757.896 (0) Semaphore (fd) unlocked
+0757.896 (0) There were no errors in the uploads, so the 'resume' event (1) is being unscheduled
+0757.899 (0) No email will/can be sent - the user has not configured an email address.
+0757.899 (0) The backup apparently succeeded and is now complete

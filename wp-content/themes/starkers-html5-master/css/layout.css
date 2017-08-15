@@ -390,6 +390,7 @@ box:after {
 
 .trip-img-holder {
   height: 300px;
+  word-wrap: break-word;
 }
 
 .activity-wrapper:nth-child(3n),
@@ -440,7 +441,18 @@ box:after {
   font-size: 30px;
   font-family: GothamBold;
   pointer-events: none;
-  padding: 30px 0 0 30px;
+  padding: 30px 30px 0 30px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+}
+
+.trip-img-holder h2 {
+  color: white;
+  position: relative;
+  z-index: 1000;
+  font-size: 20px;
+  font-family: GothamBold;
+  pointer-events: none;
+  padding: 10px 0 0 30px;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
 }
 
@@ -454,6 +466,30 @@ box:after {
   bottom: 20px;
   right: 20px;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+}
+
+.location-logo {
+  width: 20px;
+  padding-right: 5px;
+}
+
+.past-trips {
+  font-size: 16px;
+}
+
+.past-trips a {
+  text-decoration: none;
+  color: #44b749;
+}
+
+.past-trips-h1 {
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-weight: bold;
+  padding: 30px;
+  padding-left: 0;
+  font-family: GothamBold;
+  font-size: 16px;
 }
 
 .img-holder:hover:after,
@@ -490,10 +526,20 @@ box:after {
 
 .join-logo {
   position: absolute;
-  width: 60px;
-  display: block;
+  width: 50px;
   left: 15%;
   top: 30%;
+}
+
+.leader-img {
+  padding-right: 30px;
+}
+
+
+.trip-leader-name {
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 10px;
 }
 
 .join h1 {
@@ -666,7 +712,6 @@ box:after {
   height: 100vh;
   position: relative;
   top: 0;
-  z-index: -1;
 }
 
 
@@ -817,6 +862,7 @@ box:after {
   line-height: 25px;
   padding: 10px 0px;
   padding-left: 5px;
+  text-transform: uppercase;
 }
 
 .officer-email {
@@ -829,6 +875,23 @@ box:after {
   font-size: 14px;
   line-height: 30px;
   padding-left: 5px;
+}
+
+.past-officers {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.past-officers h1 {
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  font-family: GothamBold;
+  margin-bottom: 30px;
+}
+
+.past-officer-header {
+  font-family: GothamBold;
 }
 
 footer {
@@ -1079,7 +1142,10 @@ input[type="submit"] {
 /* ----------------------------------------- */
 
 .single-trip .menu-external-menu-container,
-.page-id-155 .menu-external-menu-container {
+.page-id-155 .menu-external-menu-container,
+.page-id-137 .menu-external-menu-container,
+.page-id-261 .menu-external-menu-container,
+.page-id-151 .menu-external-menu-container {
   display: none;
 }
 
@@ -1115,7 +1181,7 @@ input[type="submit"] {
   border: 2px solid black;
 }
 
-.join-trip {
+.join-trip, .leave-trip {
   width: 90%;
   text-transform: uppercase;
   background-color: #44b749;
@@ -1129,12 +1195,31 @@ input[type="submit"] {
   cursor: pointer;
 }
 
-.join-trip:hover {
+.leave-trip {
+  background-color: #b73c3c;
+}
+
+.leader-email {
+  margin-left: 30px;
+  font-size: 12px;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.join-trip:hover,
+.leave-trip:hover {
   background-color: white;
   color: #44b749;
   height: 46px;
-  width: calc(90%-4px);
+  line-height: 46px;
+  width: calc(90% - 4px);
   border: 2px solid #44b749;
+}
+
+.leave-trip:hover {
+  color: #b73c3c;
+  border: 2px solid #b73c3c;
 }
 
 .trip-details {
@@ -1165,12 +1250,30 @@ input[type="submit"] {
 }
 
 .trip-detail {
-  padding: 5px 30px 5px 30px;
+  padding: 0 30px 0 30px;
   line-height: 25px;
 }
 
 .trip-detail:last-child {
   padding-bottom: 30px;
+}
+
+.contact-trip-leader {
+  border: 2px solid #44b749;
+  width: 80%;
+  font-family: GothamBold;
+  color: #44b749;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.contact-trip-leader:hover {
+  background-color: #44b749;
+  color: white;
+  cursor: pointer;
 }
 
 .trip-overview {
@@ -1226,8 +1329,75 @@ table td {
 
 
 
+/* PROFILE PAGE */
+/* ----------------------------------------- */
+
+.profile-bg {
+  background: url('/outdoors/wp-content/uploads/profile-bg.png') no-repeat center -50px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 600px;
+  position: relative;
+  top: 0;
+  z-index: -1;
+}
+
+.profile-bg h1 {
+  color: white;
+  font-size: 60px;
+  font-family: 'PlayfairDisplay';
+  text-shadow: 3px 3px 10px black;
+  text-align: center;
+}
+
+.circle-img {
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+}
+
+.prof-img {
+  padding-top: 250px;
+}
 
 
 
 
 
+/* REPORTS */
+
+.reports-bg {
+  background: url('/outdoors/wp-content/uploads/reports.png') no-repeat center -10px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  min-height: 500px;
+  position: relative;
+  top: 0;
+  z-index: -1;
+}
+
+
+
+
+/* MEMBER RESOURCES */
+
+.member-resources-bg {
+  background: url('/outdoors/wp-content/uploads/member-resources-bg.png') no-repeat center -10px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 550px;
+  min-height: 500px;
+  position: relative;
+  top: 0;
+  z-index: -1;
+}

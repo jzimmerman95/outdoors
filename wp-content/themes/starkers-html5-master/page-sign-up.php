@@ -9,6 +9,7 @@
  
 get_header();?>
 
+
 <div class="sign-up-bg">
   <div class="sign-up-header-wrapper">
     <img class="home-arrows" src="/outdoors/wp-content/uploads/arrow-left.png" /><div class="sign-up-header">Join Outdoors</div><img class="home-arrows" src="/outdoors/wp-content/uploads/arrow-right.png" />
@@ -24,7 +25,6 @@ get_header();?>
 
 <link rel="stylesheet" href="https://unpkg.com/flatpickr/dist/flatpickr.min.css">
 <script src="https://unpkg.com/flatpickr"></script>
-
 
 <script>
   flatpickr("#date", {altInput: true});

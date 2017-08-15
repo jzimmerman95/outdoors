@@ -13,10 +13,21 @@ get_header();
 <div class="sign-up-bg">
     <div class="sign-up-header-wrapper">
     </div>
+  <form action="/outdoors/payment/" method="POST">
+    <script
+      src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+      data-key="pk_test_8RqSpTYU4rKfwfPPuk8GR8UQ"
+      data-amount="999"
+      data-name="Demo Site"
+      data-zip-code="true"
+      data-description="Widget"
+      data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+      data-locale="auto">
+    </script>
+  </form>
 
-<?php
+  <?php
   require_once('stripe/init.php');
-  $current_user = wp_get_current_user();
   if(isset($_POST['stripeToken'])) {
     echo 'stripe token set';
     \stripe\Stripe::setApiKey("sk_test_AV3VKHC0TTidSjgLyD4HcfQx");
@@ -37,10 +48,13 @@ get_header();
     ));
 
     if($charge) {
-        $user_id = $current_user->id;
+        $user_id = wp_get_current_user()->ID;
         $timestamp = time();
         update_user_meta( $user_id, 'user_paid', $timestamp);
         update_user_meta( $user_id, 'stripe_id', $customer->id);
+        $redirect_url = home_url() . '/upcoming-trips';
+        wp_redirect($redirect_url);
+        exit;
     }
   }
   else {

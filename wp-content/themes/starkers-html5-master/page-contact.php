@@ -53,11 +53,15 @@ while ($loop->have_posts()) : $loop->the_post();?>
   <h1><?php echo types_render_field("contact-officers-title", array( )); ?></h1>
 </div>
 
-<?php endwhile; 
+<?php
+
+$past_officers = types_render_field("past-officers", array());
+endwhile;
 
 $childargs = array(
   'post_type' => 'officer',
   'order' => 'ASC',
+  'posts_per_page' => -1
 );
 $loop = new WP_Query($childargs);
 $count = 0;?>
@@ -81,4 +85,11 @@ $count = 0;?>
 <?php endwhile; ?>
 
 </div>
+
+<div class="past-officers">
+  <h1>Past Officers</h1>
+  <div><?php echo $past_officers; ?></div>
+</div>
+
+
 <?php get_footer(); ?>
