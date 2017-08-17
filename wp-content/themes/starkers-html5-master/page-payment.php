@@ -11,21 +11,26 @@ get_header();
 ?>
 
 <div class="sign-up-bg">
-  <div class="sign-up-header-wrapper">
-    <img class="home-arrows" src="/outdoors/wp-content/uploads/arrow-left.png" /><div class="sign-up-header">Join Outdoors</div><img class="home-arrows" src="/outdoors/wp-content/uploads/arrow-right.png" />
-  </div>
+  <div class="membership-dues">Membership Dues</div>
 
   <form action="/outdoors/payment/" method="POST">
-    <script
-      src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-      data-key="pk_test_8RqSpTYU4rKfwfPPuk8GR8UQ"
-      data-amount="999"
-      data-name="Demo Site"
-      data-zip-code="true"
-      data-description="Widget"
-      data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
-      data-locale="auto">
-    </script>
+    <select class="membership_select">
+      <option value="" disabled selected>Select Membership</option>
+      <option value="3000">5 Months for $30</option>
+      <option value="5000">12 Months for $50</option>
+    </select>
+    <div class="stripe-btn-wrapper">
+      <script
+        src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+        data-key="pk_test_8RqSpTYU4rKfwfPPuk8GR8UQ"
+        data-amount="999"
+        data-name="Demo Site"
+        data-zip-code="true"
+        data-description="Widget"
+        data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+        data-locale="auto">
+      </script>
+    </div>
   </form>
 
   <?php

@@ -76,56 +76,48 @@ function cr_display_form($fields = array(), $errors = null) {
   if (is_wp_error($errors) && count($errors->get_error_messages()) > 0) {
     
     // Display errors
-    ?><ul><?php
+    ?>
+    <div class="form-holder">
+      <form class="sign-up-form" method="post" action="<?php $_SERVER['REQUEST_URI'] ?>">
+    <div class="sign-up-errors"><ul><?php
     foreach ($errors->get_error_messages() as $key => $val) {
       ?><li>
         <?php echo $val; ?>
       </li><?php
     }
-    ?></ul><?php
+    ?></ul></div><?php
   }
   
   // Disaply form
   
   ?>
 
-    <div class="form-wrapper">
-      <form class="sign-up-form" method="post" action="<?php $_SERVER['REQUEST_URI'] ?>">
+    
         <div class="two_input_section">
-          <div class="input-title">First Name</div>
-          <input class="first_input" type="text" name="first_name" value="<?php echo (isset($fields['first_name']) ? $fields['first_name'] : '') ?>" required><br>
+          <input class="cr_input" type="text" placeholder="First Name" name="first_name" value="<?php echo (isset($fields['first_name']) ? $fields['first_name'] : '') ?>" required><br>
         </div><div class="two_input_section">
-          <div class="input-title">Last Name</div>
-          <input type="text" name="last_name" value="<?php echo (isset($fields['last_name']) ? $fields['last_name'] : '') ?>" required><br>
+          <input class="cr_input" type="text" name="last_name" placeholder="Last Name" value="<?php echo (isset($fields['last_name']) ? $fields['last_name'] : '') ?>" required><br>
         </div>
         <div class="two_input_section">
-          <div class="input-title">Email</div>
-          <input class="first_input" type="text" name="user_email" value="<?php echo (isset($fields['user_email']) ? $fields['user_email'] : '') ?>" required><br>
+          <input class="cr_input" type="text" placeholder="Email" name="user_email" value="<?php echo (isset($fields['user_email']) ? $fields['user_email'] : '') ?>" required><br>
         </div><div class="two_input_section">
-          <div class="input-title">Phone</div>
-          <input type="text" name="phone_number" value="<?php echo (isset($fields['phone_number']) ? $fields['phone_number'] : '') ?>" required><br>
+          <input class="cr_input" type="text" name="phone_number" placeholder="Phone" value="<?php echo (isset($fields['phone_number']) ? $fields['phone_number'] : '') ?>" required><br>
         </div>
         <div class="two_input_section">
-          <div class="input-title">Birthday</div>
-          <input class="first_input" type="text" id="date" name="birthday" required><br>
+          <input class="cr_input" type="text" placeholder="Birthday" id="date" name="birthday" required><br>
         </div><div class="two_input_section">
-          <div class="input-title">Gender</div>
-          <select name="gender" required>
+          <select class="cr_input_select" name="gender" required>
+            <option value="" disabled selected>Gender</option>
             <option value="female">Female</option>
             <option value="male">Male</option>
           </select><br>
         </div>
-        <!--
-        Figure out drop down menu for Gender
-        -->
         <div class="two_input_section">
-          <div class="input-title">Password</div>
-          <input class="first_input" type="password" name="user_pass" required><br>
+          <input class="cr_input" type="password" name="user_pass" required placeholder="Password"><br>
         </div><div class="two_input_section">
-          <div class="input-title">Confirm Password</div>
-          <input type="password" name="confirm_password" required><br>
+          <input class="cr_input" type="password" name="confirm_password" required placeholder="Confirm Password"><br>
         </div>
-        <input type="submit" name="submit" value="Register">
+        <input class="sign-up-submit" type="submit" name="submit" value="Sign Up">
       </form>
     </div>
 

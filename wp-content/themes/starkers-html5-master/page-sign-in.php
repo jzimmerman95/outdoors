@@ -39,7 +39,7 @@ if ( ! is_user_logged_in() ) { // Display WordPress login form:
   <div class="sign-up-header-wrapper">
     <img class="home-arrows" src="/outdoors/wp-content/uploads/arrow-left.png" /><div class="sign-up-header">Welcome Back</div><img class="home-arrows" src="/outdoors/wp-content/uploads/arrow-right.png" />
   </div>
-  <div class="form-holder"><?php echo wp_login_form( $args ); ?></div>
+  <div class="form-wrapper"><?php echo wp_login_form( $args ); ?></div>
 </div>
 
 <?php get_footer(); ?>

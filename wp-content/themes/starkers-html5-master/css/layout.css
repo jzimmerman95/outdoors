@@ -640,9 +640,9 @@ box:after {
   top: 38%;
   left: 0;
   right: 0;
-  max-width: 50%;
-  z-index: 10;
+  max-width: 700px;
   margin: 0 auto;
+  z-index: 10;
   color: white;
   font-family: GothamBook;
 }
@@ -656,7 +656,7 @@ box:after {
   height: 40px !important;
   margin: 0;
   padding-left: 10px;
-  width: 100% !important;
+  width: 100%;
   font-size: 14px !important;
 }
 
@@ -922,6 +922,56 @@ footer {
   width: calc(100% - 40px) !important;
 }
 
+.cr_input {
+  width: calc(100% - 40px) !important;
+  margin: 5px auto !important;
+}
+
+.cr_input_select {
+  width: calc(100% - 25px) !important;
+}
+
+.membership_select {
+  width: 250px;
+  margin: 0 auto;
+  display: block;
+  height: 40px !important;
+  padding-left: 10px;
+  font-size: 14px !important;
+  margin-top: 50px;
+  background-color: white;
+}
+
+.stripe-btn-wrapper {
+  width: 120px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.sign-up-form input[type="submit"] {
+  background-color: #44b749;
+  color: white;
+  border: none;
+  width: 250px;
+  height: 50px !important;
+  text-transform: uppercase;
+  margin: 0 auto;
+  letter-spacing: 6px;
+  margin-top: 20px;
+  display: block;
+  cursor: pointer;
+}
+
+.sign-up-form input[type="submit"]:hover {
+  color: #44b749;
+  background-color: white;
+}
+
+.sign-up-errors {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
 input[name="name"] {
   width: calc(100% - 20px);
 }
@@ -946,7 +996,7 @@ input[name="name"] {
   height: 150px;
 }
 
-input[type="submit"] {
+.create-a-trip-form input[type="submit"] {
   background-color: #343434;
   color: white;
   font-family: GothamBold;
@@ -1401,3 +1451,24 @@ table td {
   top: 0;
   z-index: -1;
 }
+
+
+
+
+/* MEMBERSHIP DUES */
+
+.membership-dues {
+  color: white;
+  font-family: GothamBold;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 6px;
+  font-size: 16px;
+  text-shadow: 1px 1px 3px black;
+  padding: 250px 30px 0 30px;
+}
+
+
+
+
+
