@@ -7,6 +7,12 @@
  * @since Starkers HTML5 3.0
  */
  
+if(is_user_logged_in()) {
+  $redirect_url = home_url() . '/upcoming-trips';
+  wp_redirect($redirect_url);
+  exit;
+}
+
 get_header();?>
 
 
@@ -15,11 +21,7 @@ get_header();?>
     <img class="home-arrows" src="/outdoors/wp-content/uploads/arrow-left.png" /><div class="sign-up-header">Join Outdoors</div><img class="home-arrows" src="/outdoors/wp-content/uploads/arrow-right.png" />
   </div>
   <?php 
-    if(is_user_logged_in()) {
-      echo 'You are currently logged in. Redirect to upcoming trips';
-    }else {
-      echo do_shortcode("[cr]");
-    }
+    echo do_shortcode("[cr]");
   ?>
 </div>
 

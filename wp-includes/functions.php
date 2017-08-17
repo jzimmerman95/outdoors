@@ -5652,6 +5652,8 @@ function new_contact_methods( $contactmethods ) {
     $contactmethods['phone_number'] = 'Phone Number';
     $contactmethods['birthday'] = 'Birthday';
     $contactmethods['gender'] = 'Gender';
+    $contactmethods['user_paid'] = 'User Paid';
+    $contactmethods['waiver_signed'] = 'Waiver Signed';
     return $contactmethods;
 }
 add_filter( 'user_contactmethods', 'new_contact_methods', 10, 1 );
@@ -5660,22 +5662,29 @@ function new_modify_user_table( $column ) {
     $column['phone_number'] = 'Phone';
     $column['birthday'] = 'Birthday';
     $column['gender'] = 'Gender';
+    $column['user_paid'] = 'User Paid';
+    $column['waiver_signed'] = 'Waiver Signed';
     return $column;
 }
 add_filter( 'manage_users_columns', 'new_modify_user_table' );
 
 function new_modify_user_table_row( $val, $column_name, $user_id ) {
     switch ($column_name) {
-        case 'phone_number' :
-            return get_the_author_meta( 'phone_number', $user_id );
-            break;
-        case 'birthday' :
-            return get_the_author_meta( 'birthday', $user_id );
-            break;
-        case 'gender' :
-            return get_the_author_meta( 'gender', $user_id );
-            break;
-        default:
+			case 'phone_number' :
+				return get_the_author_meta( 'phone_number', $user_id );
+				break;
+			case 'birthday' :
+				return get_the_author_meta( 'birthday', $user_id );
+				break;
+			case 'gender' :
+				return get_the_author_meta( 'gender', $user_id );
+				break;
+			case 'user_paid' :
+      	   return get_the_author_meta( 'user_paid', $user_id );
+      	   break;
+			case 'waiver_signed' :
+				return get_the_author_meta( 'waiver_signed', $user_id );
+			default:
     }
     return $val;
 }
