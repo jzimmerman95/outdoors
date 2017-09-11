@@ -185,7 +185,8 @@ p {
 }
 
 .login form .input,
-.login input[type="text"] {
+.login input[type="text"],
+.login input[type="password"] {
 	font-size: 24px;
 	width: 100%;
 	padding: 3px;
@@ -194,6 +195,7 @@ p {
 
 .login form .input,
 .login input[type="text"],
+.login input[type="password"],
 .login form input[type="checkbox"] {
 	background: #fbfbfb;
 }

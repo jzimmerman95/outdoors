@@ -20,12 +20,9 @@ if ( ! is_user_logged_in() ) { // Display WordPress login form:
 
     $args = array(
         'redirect' => $redirect_url, 
-        'form_id' => 'loginform-custom',
-        'label_username' => __( 'Username custom text' ),
-        'label_password' => __( 'Password custom text' ),
-        'label_remember' => __( 'Remember Me custom text' ),
+        'form_id' => 'loginform',
         'label_log_in' => __( 'Sign in' ),
-        'remember' => true
+        'remember' => false
     );
     // wp_login_form( $args );
 } else { // If logged in:

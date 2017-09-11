@@ -8,595 +8,595 @@
 .wp-caption		{ border: 1px solid #999; text-align: center; background: #eee; padding: 10px; margin: 10px; }
 
 @font-face {
-    font-family: GothamBold;
-    src: url('../fonts/GothamBold.otf');
+		font-family: GothamBold;
+		src: url('../fonts/GothamBold.otf');
 }
 @font-face {
-    font-family: GothamBook;
-    src: url('../fonts/GothamBook.otf');
+		font-family: GothamBook;
+		src: url('../fonts/GothamBook.otf');
 }
 @font-face{
-  font-family: PlayfairDisplay;
-  src: url('../fonts/PlayfairDisplay-Bold.ttf');
+	font-family: PlayfairDisplay;
+	src: url('../fonts/PlayfairDisplay-Bold.ttf');
 }
 @font-face{
-  font-family: GlossAndBloom;
-  src: url('../fonts/Gloss_And_Bloom.ttf');
+	font-family: GlossAndBloom;
+	src: url('../fonts/Gloss_And_Bloom.ttf');
 }
 
 /*****************************************
-                HOME
+								HOME
 *****************************************/
 
 body {
-  color: #343434;
-  font-family: GothamBook;
+	color: #343434;
+	font-family: GothamBook;
 }
 
 .menu-internal-menu-container a img {
-  width: 100px !important;
-  height: auto;
-  position: absolute;
-  left: 3%;
-  top: 3%;
+	width: 100px !important;
+	height: auto;
+	position: absolute;
+	left: 3%;
+	top: 3%;
 }
 
 .menu-internal-menu-container {
-  text-align: right;
-  background-color: white;
+	text-align: right;
+	background-color: white;
 }
 
 .menu-external-menu-container,
 .menu-internal-menu-container {
-  font-family: 'GothamBold';
-  font-size: 0;
-  position: absolute;
-  width: 100%;
-  z-index: 1;
+	font-family: 'GothamBold';
+	font-size: 0;
+	position: absolute;
+	width: 100%;
+	z-index: 1;
 }
 
 .menu-external-menu-container li {
-  display: inline-block;
-  width: 20%;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  padding-top: 15px;
-  font-size: 12px;
-  letter-spacing: 6px;
-  text-shadow: 2px 2px 5px black;
+	display: inline-block;
+	width: 20%;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	padding-top: 15px;
+	font-size: 12px;
+	letter-spacing: 6px;
+	text-shadow: 2px 2px 5px black;
 }
 
 .menu-internal-menu-container li {
-  display: inline-block;
-  width: 10%;
-  text-align: center;
-  margin: 0;
-  padding: 25px 0;
-  font-size: 12px;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  line-height: 20px;
+	display: inline-block;
+	width: 10%;
+	text-align: center;
+	margin: 0;
+	padding: 25px 0;
+	font-size: 12px;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	line-height: 20px;
 }
 
 .menu-internal-menu-container a {
-  text-decoration: none;
-  color: black;
+	text-decoration: none;
+	color: black;
 }
 
 .menu-external-menu-container a {
-  text-decoration: none;
-  color: white;
+	text-decoration: none;
+	color: white;
 }
 
 .get-outside {
-  font-family: 'GothamBold';
-  letter-spacing: 8px;
-  max-width: 70%;
-  margin: 0 auto;
-  color: white;
-  text-align: center;
-  padding-top: 275px;
-  font-size: 18px;
+	font-family: 'GothamBold';
+	letter-spacing: 8px;
+	max-width: 70%;
+	margin: 0 auto;
+	color: white;
+	text-align: center;
+	padding-top: 275px;
+	font-size: 18px;
 }
 
 .get-outside p {
-  display: inline-block;
-  padding-left: 15px;
-  padding-right: 15px;
+	display: inline-block;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 
 .home-text {
-  color: white;
-  text-align: center;
+	color: white;
+	text-align: center;
 }
 
 .about-mtn {
-  width: 100%;
-  min-width: 930px;
-  overflow-x: hidden;
-  height: 400px;
-  position: absolute;
-  bottom: -72px;
-  pointer-events: none;
+	width: 100%;
+	min-width: 930px;
+	overflow-x: hidden;
+	height: 400px;
+	position: absolute;
+	bottom: -72px;
+	pointer-events: none;
 }
 
 .home-arrows {
-  width: 100px;
-  display: inline-block;
-  vertical-align: text-bottom;
+	width: 100px;
+	display: inline-block;
+	vertical-align: text-bottom;
 }
 
 .home-text h1 {
-  font-size: 110px;
-  font-family: 'PlayfairDisplay';
-  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.59);
+	font-size: 110px;
+	font-family: 'PlayfairDisplay';
+	text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.59);
 }
 
 .at-uva {
-  font-size: 50px;
-  font-family: GlossAndBloom;
-  padding-top: 40px;
+	font-size: 50px;
+	font-family: GlossAndBloom;
+	padding-top: 40px;
 }
 
 /*****************************************
-                ABOUT
+								ABOUT
 *****************************************/
 
 .about {
-  padding-top: 300px;
+	padding-top: 300px;
 }
 
 .about-logo {
-  width: 75px;
-  display: block;
-  margin: 0 auto;
-  padding-top: 50px;
+	width: 75px;
+	display: block;
+	margin: 0 auto;
+	padding-top: 50px;
 }
 
 .about h1 {
-  color: #2e2e2e;
-  text-align: center;
-  font-size: 65px;
-  font-family: 'PlayfairDisplay';
+	color: #2e2e2e;
+	text-align: center;
+	font-size: 65px;
+	font-family: 'PlayfairDisplay';
 }
 
 .green-rectangle {
-  width: 70px;
-  height: 7px;
-  background-color: #44b749;
-  margin: 0 auto;
-  margin-top: 20px;
+	width: 70px;
+	height: 7px;
+	background-color: #44b749;
+	margin: 0 auto;
+	margin-top: 20px;
 }
 
 .about-text {
-  padding-top: 30px;
-  color: #2e2e2e;
-  text-align: center;
-  max-width: 700px;
-  margin: 0 auto;
-  line-height: 35px;
-  padding-bottom: 20px;
+	padding-top: 30px;
+	color: #2e2e2e;
+	text-align: center;
+	max-width: 700px;
+	margin: 0 auto;
+	line-height: 35px;
+	padding-bottom: 20px;
 }
 
 .mission {
-  position: relative;
-  top: 0;
-  left: 0;
+	position: relative;
+	top: 0;
+	left: 0;
 }
 
 .mission-bg {
-  width: 100%;
-  min-width: 700px;
-  position: relative;
-  min-height: 500px;
+	width: 100%;
+	min-width: 700px;
+	position: relative;
+	min-height: 500px;
 }
 
 .mission-logo {
-  position: absolute;
-  width: 80px;
-  display: block;
-  left: 0;
-  right: 0;
-  top: 35%;
-  margin: 0 auto;
+	position: absolute;
+	width: 80px;
+	display: block;
+	left: 0;
+	right: 0;
+	top: 35%;
+	margin: 0 auto;
 }
 
 .mission h1 {
-  position: absolute;
-  color: white;
-  top: 48%;
-  left: 0;
-  right: 0;
-  text-align: center;
-  font-size: 65px;
-  font-family: 'PlayfairDisplay';
+	position: absolute;
+	color: white;
+	top: 48%;
+	left: 0;
+	right: 0;
+	text-align: center;
+	font-size: 65px;
+	font-family: 'PlayfairDisplay';
 }
 
 .mission-text {
-  position: absolute;
-  color: white;
-  top: 59%;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  text-align: center;
-  font-family: 'GothamBold';
-  max-width: 700px;
-  line-height: 35px;
-  font-size: 18px;
+	position: absolute;
+	color: white;
+	top: 59%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	text-align: center;
+	font-family: 'GothamBold';
+	max-width: 700px;
+	line-height: 35px;
+	font-size: 18px;
 }
 
 .how-it-works {
-  width: 70%;
-  margin: 0 auto;
+	width: 70%;
+	margin: 0 auto;
 }
 
 .how-it-works h1 {
-  color: #2e2e2e;
-  padding-top: 8%;
-  font-size: 65px;
-  font-family: 'PlayfairDisplay';
+	color: #2e2e2e;
+	padding-top: 8%;
+	font-size: 65px;
+	font-family: 'PlayfairDisplay';
 }
 
 .join-left {
-  width: 60%;
-  display: inline-block;
+	width: 60%;
+	display: inline-block;
 }
 
 .join-right {
-  width: 39%;
-  display: inline-block;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+	width: 39%;
+	display: inline-block;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .how-it-works-row {
-  margin-top: 50px;
-  display: flex;
+	margin-top: 50px;
+	display: flex;
 }
 
 .how-it-works-smallH {
-  font-family: 'GothamBold';
-  letter-spacing: 8px;
-  font-size: 18px;
+	font-family: 'GothamBold';
+	letter-spacing: 8px;
+	font-size: 18px;
 }
 
 .how-text {
-  padding-top: 30px;
-  line-height: 35px;
+	padding-top: 30px;
+	line-height: 35px;
 }
 
 .how-logo {
-  position: relative;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto auto;
-  display: block;
-  max-width: 150px;
+	position: relative;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto auto;
+	display: block;
+	max-width: 150px;
 }
 
 .participate-left {
-  width: 39%;
-  display: inline-block;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+	width: 39%;
+	display: inline-block;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .participate-right {
-  width: 60%;
-  display: inline-block;
+	width: 60%;
+	display: inline-block;
 }
 
 .right-align {
-  text-align: right;
+	text-align: right;
 }
 
 .activities-logo {
-  position: absolute;
-  width: 80px;
-  display: block;
-  left: 0;
-  right: 0;
-  top: 50%;
-  margin: 0 auto;
+	position: absolute;
+	width: 80px;
+	display: block;
+	left: 0;
+	right: 0;
+	top: 50%;
+	margin: 0 auto;
 }
 
 
 .activities {
-  position: relative;
-  top: 0;
-  left: 0;
+	position: relative;
+	top: 0;
+	left: 0;
 }
 
 .activities h1 {
-  position: absolute;
-  color: white;
-  top: 65%;
-  left: 0;
-  right: 0;
-  text-align: center;
-  font-size: 65px;
-  font-family: 'PlayfairDisplay';
-  text-shadow: 6px 6px 10px rgba(0, 0, 0, 0.59);
+	position: absolute;
+	color: white;
+	top: 65%;
+	left: 0;
+	right: 0;
+	text-align: center;
+	font-size: 65px;
+	font-family: 'PlayfairDisplay';
+	text-shadow: 6px 6px 10px rgba(0, 0, 0, 0.59);
 }
 
 video#bgvid { 
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    background: url('/outdoors/wp-content/uploads/old_rag.jpg') no-repeat;
-    background-size: cover; 
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		min-width: 100%;
+		min-height: 100%;
+		width: auto;
+		height: auto;
+		z-index: -100;
+		-ms-transform: translateX(-50%) translateY(-50%);
+		-moz-transform: translateX(-50%) translateY(-50%);
+		-webkit-transform: translateX(-50%) translateY(-50%);
+		transform: translateX(-50%) translateY(-50%);
+		background: url('/outdoors/wp-content/uploads/old_rag.jpg') no-repeat;
+		background-size: cover; 
 }
 
 .mute {
-  position: absolute;
-  right: 50px;
-  top: 80%;
-  width: 30px;
-  cursor: pointer;
-  -webkit-animation: wiggle 2s infinite;
-  -moz-animation: wiggle 2s infinite;
-  -o-animation: wiggle 2s infinite;
+	position: absolute;
+	right: 50px;
+	top: 80%;
+	width: 30px;
+	cursor: pointer;
+	-webkit-animation: wiggle 2s infinite;
+	-moz-animation: wiggle 2s infinite;
+	-o-animation: wiggle 2s infinite;
 }
 
 box:after {
-    content: '\00d7';
+		content: '\00d7';
 }
 
 @-webkit-keyframes wiggle {
-  0% {-webkit-transform: rotate(4deg); transform: rotate(4deg);}
-  5% {-webkit-transform: rotate(-4deg); transform: rotate(-4deg);}
-  10% {-webkit-transform: rotate(4deg); transform: rotate(4deg);}
-  15% {-webkit-transform: rotate(-4deg); transform: rotate(-4deg);}
-  20% {-webkit-transform: rotate(4deg); transform: rotate(4deg);}
-  25% {-webkit-transform: rotate(0deg); transform: rotate(0deg);}
-  100% {-webkit-transform: rotate(0deg); transform: rotate(0deg);}
+	0% {-webkit-transform: rotate(4deg); transform: rotate(4deg);}
+	5% {-webkit-transform: rotate(-4deg); transform: rotate(-4deg);}
+	10% {-webkit-transform: rotate(4deg); transform: rotate(4deg);}
+	15% {-webkit-transform: rotate(-4deg); transform: rotate(-4deg);}
+	20% {-webkit-transform: rotate(4deg); transform: rotate(4deg);}
+	25% {-webkit-transform: rotate(0deg); transform: rotate(0deg);}
+	100% {-webkit-transform: rotate(0deg); transform: rotate(0deg);}
 }
 
 .activities-container {
-  width: 90%;
-  margin: 0 auto;
-  margin-top: 5%;
-  font-size: 0;
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 5%;
+	font-size: 0;
 }
 
 .activity-wrapper,
 .trip-wrapper {
-  width: 32%;
-  display: inline-block;
-  margin-right: 2%;
-  margin-bottom: 2%;
-  font-size: 16px;
-  vertical-align: top;
+	width: 32%;
+	display: inline-block;
+	margin-right: 2%;
+	margin-bottom: 2%;
+	font-size: 16px;
+	vertical-align: top;
 }
 
 .trip-wrapper {
-  position: relative;
+	position: relative;
 }
 
 .trip-img-holder {
-  height: 300px;
-  word-wrap: break-word;
+	height: 300px;
+	word-wrap: break-word;
 }
 
 .activity-wrapper:nth-child(3n),
 .trip-wrapper:nth-child(3n) {
-  margin-right: 0;
+	margin-right: 0;
 }
 
 .img-holder {
-  position: relative;
-  width: 100%;
-  height: 300px;
-  font-size: 0;
+	position: relative;
+	width: 100%;
+	height: 300px;
+	font-size: 0;
 }
 
 .img-holder:after,
 .trip-img-holder:after {
-  content: '';
-  position: absolute;
-  width: 100%; 
-  height: 100%;
-  top: 0; 
-  left: 0;
-  background: rgba(0,0,0,0.6);
-  opacity: 0;
-  transition: all 0.5s;
-  -webkit-transition: all 0.5s;
+	content: '';
+	position: absolute;
+	width: 100%; 
+	height: 100%;
+	top: 0; 
+	left: 0;
+	background: rgba(0,0,0,0.6);
+	opacity: 0;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
 }
 
 .trip-wrapper a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 .img-holder h1 {
-  color: white;
-  position: relative;
-  z-index: 1000;
-  text-align: center;
-  line-height: 300px;
-  font-size: 24px;
-  font-family: GothamBold;
-  pointer-events: none;
+	color: white;
+	position: relative;
+	z-index: 1000;
+	text-align: center;
+	line-height: 300px;
+	font-size: 24px;
+	font-family: GothamBold;
+	pointer-events: none;
 }
 
 .trip-img-holder h1 {
-  color: white;
-  position: relative;
-  z-index: 1000;
-  font-size: 30px;
-  font-family: GothamBold;
-  pointer-events: none;
-  padding: 30px 30px 0 30px;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+	color: white;
+	position: relative;
+	z-index: 1000;
+	font-size: 30px;
+	font-family: GothamBold;
+	pointer-events: none;
+	padding: 30px 30px 0 30px;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
 }
 
 .trip-img-holder h2 {
-  color: white;
-  position: relative;
-  z-index: 1000;
-  font-size: 20px;
-  font-family: GothamBold;
-  pointer-events: none;
-  padding: 10px 0 0 30px;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+	color: white;
+	position: relative;
+	z-index: 1000;
+	font-size: 20px;
+	font-family: GothamBold;
+	pointer-events: none;
+	padding: 10px 0 0 30px;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
 }
 
 .trip-img-holder h3 {
-  position: absolute;
-  color: white;
-  z-index: 1000;
-  font-size: 16px;
-  font-family: GothamBold;
-  pointer-events: none;
-  bottom: 20px;
-  right: 20px;
-  text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
+	position: absolute;
+	color: white;
+	z-index: 1000;
+	font-size: 16px;
+	font-family: GothamBold;
+	pointer-events: none;
+	bottom: 20px;
+	right: 20px;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
 }
 
 .location-logo {
-  width: 20px;
-  padding-right: 5px;
+	width: 20px;
+	padding-right: 5px;
 }
 
 .past-trips {
-  font-size: 16px;
+	font-size: 16px;
 }
 
 .past-trips a {
-  text-decoration: none;
-  color: #44b749;
+	text-decoration: none;
+	color: #44b749;
 }
 
 .past-trips-h1 {
-  text-transform: uppercase;
-  letter-spacing: 6px;
-  font-weight: bold;
-  padding: 30px;
-  padding-left: 0;
-  font-family: GothamBold;
-  font-size: 16px;
+	text-transform: uppercase;
+	letter-spacing: 6px;
+	font-weight: bold;
+	padding: 30px;
+	padding-left: 0;
+	font-family: GothamBold;
+	font-size: 16px;
 }
 
 .img-holder:hover:after,
 .trip-img-holder:hover:after {
-  opacity: 1;
+	opacity: 1;
 }
 
 .img-holder:hover,
 .trip-img-holder:hover {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 .activity-desc {
-  font-size: 15px;
-  line-height: 30px;
-  margin-bottom: 2%;
-  display: none;
-  padding: 20px;
-  border: 2px solid #44b749;
+	font-size: 15px;
+	line-height: 30px;
+	margin-bottom: 2%;
+	display: none;
+	padding: 20px;
+	border: 2px solid #44b749;
 }
 
 .join {
-  position: relative;
-  top: 0;
-  left: 0;
+	position: relative;
+	top: 0;
+	left: 0;
 }
 
 .join-bg {
-  width: 100%;
-  min-width: 1000px;
-  position: relative;
-  min-height: 500px;
+	width: 100%;
+	min-width: 1000px;
+	position: relative;
+	min-height: 500px;
 }
 
 .join-logo {
-  position: absolute;
-  width: 50px;
-  left: 15%;
-  top: 30%;
+	position: absolute;
+	width: 50px;
+	left: 15%;
+	top: 30%;
 }
 
 .leader-img {
-  padding-right: 30px;
+	padding-right: 30px;
 }
 
 
 .trip-leader-name {
-  display: inline-block;
-  vertical-align: top;
-  padding-top: 10px;
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 10px;
 }
 
 .join h1 {
-  position: absolute;
-  color: white;
-  top: 40%;
-  left: 15%;
-  font-size: 65px;
-  font-family: 'PlayfairDisplay';
+	position: absolute;
+	color: white;
+	top: 40%;
+	left: 15%;
+	font-size: 65px;
+	font-family: 'PlayfairDisplay';
 }
 
 .join-trees {
-  position: absolute;
-  right: 6%;
-  bottom: -4%;
-  width: 40%;
+	position: absolute;
+	right: 6%;
+	bottom: -4%;
+	width: 40%;
 }
 
 .black-rectangle {
-  width: 70px;
-  height: 7px;
-  background-color: black;
-  margin: 0 auto;
-  margin-top: 20px;
-  position: absolute;
-  top: 48%;
-  left: 15%;
+	width: 70px;
+	height: 7px;
+	background-color: black;
+	margin: 0 auto;
+	margin-top: 20px;
+	position: absolute;
+	top: 48%;
+	left: 15%;
 }
 
 .join-text {
-  color: white;
-  line-height: 30px;
-  bottom: 40%;
-  left: 15%;
-  position: absolute;
-  max-width: 500px;
+	color: white;
+	line-height: 30px;
+	bottom: 40%;
+	left: 15%;
+	position: absolute;
+	max-width: 500px;
 }
 
 .join-btn {
-  border: 2px solid white;
-  width: 350px;
-  height: 70px;
-  color: white;
-  font-family: GothamBold;
-  position: absolute;
-  left: 15%;
-  bottom: 25%;
-  text-align: center;
-  line-height: 70px;
-  letter-spacing: 16px;
-  padding-left: 16px;
-  cursor: pointer;
+	border: 2px solid white;
+	width: 350px;
+	height: 70px;
+	color: white;
+	font-family: GothamBold;
+	position: absolute;
+	left: 15%;
+	bottom: 25%;
+	text-align: center;
+	line-height: 70px;
+	letter-spacing: 16px;
+	padding-left: 16px;
+	cursor: pointer;
 }
 
 .join-btn:hover {
-  background-color: white;
-  color: #44b749;
+	background-color: white;
+	color: #44b749;
 }
 
 
@@ -606,92 +606,92 @@ box:after {
 /* ----------------------------------------- */
 
 .sign-up-bg {
-  background: url('/outdoors/wp-content/uploads/signupbg.png') no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  top: 0;
+	background: url('/outdoors/wp-content/uploads/signupbg.png') no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	top: 0;
 }
 
 .sign-up-header {
-  display: inline-block;
-  color: white;
-  font-family: GothamBold;
-  text-transform: uppercase;
-  text-align: center;
-  letter-spacing: 6px;
-  font-size: 16px;
-  text-shadow: 1px 1px 3px black;
-  padding: 15% 30px 0 30px;
+	display: inline-block;
+	color: white;
+	font-family: GothamBold;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 6px;
+	font-size: 16px;
+	text-shadow: 1px 1px 3px black;
+	padding: 15% 30px 0 30px;
 }
 
 .sign-up-header-wrapper {
-  width: 482px;
-  margin: 0 auto;
-  padding-top: 175px;
+	width: 482px;
+	margin: 0 auto;
+	padding-top: 175px;
 }
 
 .form-holder form {
-  position: absolute;
-  top: 38%;
-  left: 0;
-  right: 0;
-  max-width: 700px;
-  margin: 0 auto;
-  z-index: 10;
-  color: white;
-  font-family: GothamBook;
+	position: absolute;
+	top: 38%;
+	left: 0;
+	right: 0;
+	max-width: 700px;
+	margin: 0 auto;
+	z-index: 10;
+	color: white;
+	font-family: GothamBook;
 }
 
 .form-holder label {
-  display: none;
+	display: none;
 }
 
 .form-holder input,
 .form-holder select {
-  height: 40px !important;
-  margin: 0;
-  padding-left: 10px;
-  width: 100%;
-  font-size: 14px !important;
+	height: 40px !important;
+	margin: 0;
+	padding-left: 10px;
+	width: 100%;
+	font-size: 14px !important;
 }
 
 .create-a-trip-form select {
-  height: 40px !important;
-  margin: 0;
-  padding-left: 10px;
-  font-size: 14px !important;
-  margin-top: 10px;
-  width: calc(100% - 10px) !important;
-  background-color: white;
+	height: 40px !important;
+	margin: 0;
+	padding-left: 10px;
+	font-size: 14px !important;
+	margin-top: 10px;
+	width: calc(100% - 10px) !important;
+	background-color: white;
 }
 
 .rmrow {
-  padding: 0;
-  min-height: 40px !important;
-  margin: 0 1% 0 1% !important;
+	padding: 0;
+	min-height: 40px !important;
+	margin: 0 1% 0 1% !important;
 }
 
 .rminput input {
-  width: 100% !important;
+	width: 100% !important;
 }
 
 .form-holder input[type="button"] {
-  display: block;
-  width: 250px !important;
-  margin: 0 auto;
-  height: 40px;
-  color: white;
-  background-color: #44b749;
-  font-family: GothamBold;
-  border: none;
-  text-transform: uppercase;
-  letter-spacing: 6px;
-  margin-top: 30px;
+	display: block;
+	width: 250px !important;
+	margin: 0 auto;
+	height: 40px;
+	color: white;
+	background-color: #44b749;
+	font-family: GothamBold;
+	border: none;
+	text-transform: uppercase;
+	letter-spacing: 6px;
+	margin-top: 30px;
 }
 
 
@@ -703,15 +703,15 @@ box:after {
 /* ----------------------------------------- */
 
 .sign-in-bg {
-  background: url('/outdoors/wp-content/uploads/signinbg.png') no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  top: 0;
+	background: url('/outdoors/wp-content/uploads/signinbg.png') no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	top: 0;
 }
 
 
@@ -721,290 +721,293 @@ box:after {
 /* ----------------------------------------- */
 
 .contact-bg {
-  background: url('/outdoors/wp-content/uploads/contactbg.png') no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  width: 100%;
-  height: 650px;
-  position: relative;
-  top: 0;
-  z-index: -1;
+	background: url('/outdoors/wp-content/uploads/contactbg.png') no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	height: 650px;
+	position: relative;
+	top: 0;
+	z-index: -1;
 }
 
 .contact-bg h1 {
-  font-family: PlayfairDisplay;
-  color: white;
-  font-size: 60px;
-  text-align: center;
-  position: absolute;
-  line-height: 650px;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
+	font-family: PlayfairDisplay;
+	color: white;
+	font-size: 60px;
+	text-align: center;
+	position: absolute;
+	line-height: 650px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
 }
 
 .contact-form-wrapper {
-  width: 70%;
-  margin: 0 auto;
+	width: 70%;
+	margin: 0 auto;
 }
 
 .contact-logo {
-  width: 70px;
-  padding-top: 100px;
+	width: 70px;
+	padding-top: 100px;
 }
 
 .contact-form-wrapper h1 {
-  font-family: PlayfairDisplay;
-  font-size: 50px;
-  padding-top: 20px;
+	font-family: PlayfairDisplay;
+	font-size: 50px;
+	padding-top: 20px;
 }
 
 .contact-left {
-  width: 39%;
-  display: inline-block;
-  font-size: 0;
-  vertical-align: top;
+	width: 39%;
+	display: inline-block;
+	font-size: 0;
+	vertical-align: top;
 }
 
 .contact-form-logo {
-  width: 40px;
-  vertical-align: bottom;
+	width: 40px;
+	vertical-align: bottom;
 }
 
 .contact-email a {
-  text-decoration: none;
-  color: #343434;
+	text-decoration: none;
+	color: #343434;
 }
 
 .contact-email a:hover {
-  color: #44b749;
+	color: #44b749;
 }
 
 .contact-email {
-  display: inline-block;
-  line-height: 24px;
-  vertical-align: bottom;
-  padding-left: 15px;
-  font-size: 14px;
+	display: inline-block;
+	line-height: 24px;
+	vertical-align: bottom;
+	padding-left: 15px;
+	font-size: 14px;
 }
 
 .contact-address {
-  display: inline-block;
-  vertical-align: bottom;
-  padding-left: 15px;
-  line-height: 30px;
-  font-size: 14px;
+	display: inline-block;
+	vertical-align: bottom;
+	padding-left: 15px;
+	line-height: 30px;
+	font-size: 14px;
 }
 
 .contact-right {
-  width: 60%;
-  display: inline-block;
-  font-size: 0;
-  vertical-align: top;
+	width: 60%;
+	display: inline-block;
+	font-size: 0;
+	vertical-align: top;
 }
 
 .officers {
-  position: relative;
+	position: relative;
 }
 
 .officers-bg {
-  width: 100%;
-  min-width: 700px;
-  position: relative;
+	width: 100%;
+	min-width: 700px;
+	position: relative;
 }
 
 .officers h1 {
-  position: absolute;
-  font-family: PlayfairDisplay;
-  color: white;
-  left: 10%;
-  bottom: 30%;
-  font-size: 70px;
-  text-shadow: 2px 2px 4px black;
+	position: absolute;
+	font-family: PlayfairDisplay;
+	color: white;
+	left: 10%;
+	bottom: 30%;
+	font-size: 70px;
+	text-shadow: 2px 2px 4px black;
 }
 
 .officers-container {
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 75px;
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 75px;
 }
 
 .officer-holder {
-  display: inline-block;
-  width: 47%;
-  vertical-align: top;
-  margin-bottom: 50px;
+	display: inline-block;
+	width: 47%;
+	vertical-align: top;
+	margin-bottom: 50px;
 }
 
 .officer {
-  width: 100%;
-  height: 350px;
+	width: 100%;
+	height: 350px;
 }
 
 .officer-holder:nth-child(odd) {
-  margin-right: 5%;
+	margin-right: 5%;
 }
 
 .officer-holder h1 {
-  font-family: PlayfairDisplay;
-  font-size: 36px;
-  padding: 10px 0px;
-  padding-left: 5px;
+	font-family: PlayfairDisplay;
+	font-size: 36px;
+	padding: 10px 0px;
+	padding-left: 5px;
 }
 
 .officer-title {
-  font-family: GothamBold;
-  color: #44b749;
-  letter-spacing: 5px;
-  font-size: 12px;
-  line-height: 25px;
-  padding: 10px 0px;
-  padding-left: 5px;
-  text-transform: uppercase;
+	font-family: GothamBold;
+	color: #44b749;
+	letter-spacing: 5px;
+	font-size: 12px;
+	line-height: 25px;
+	padding: 10px 0px;
+	padding-left: 5px;
+	text-transform: uppercase;
 }
 
 .officer-email {
-  font-size: 14px;
-  padding-bottom: 15px;
-  padding-left: 5px;
+	font-size: 14px;
+	padding-bottom: 15px;
+	padding-left: 5px;
 }
 
 .officer-bio {
-  font-size: 14px;
-  line-height: 30px;
-  padding-left: 5px;
+	font-size: 14px;
+	line-height: 30px;
+	padding-left: 5px;
 }
 
 .past-officers {
-  width: 80%;
-  margin: 0 auto;
-  text-align: center;
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
 }
 
 .past-officers h1 {
-  letter-spacing: 6px;
-  text-transform: uppercase;
-  font-family: GothamBold;
-  margin-bottom: 30px;
+	letter-spacing: 6px;
+	text-transform: uppercase;
+	font-family: GothamBold;
+	margin-bottom: 30px;
 }
 
 .past-officer-header {
-  font-family: GothamBold;
+	font-family: GothamBold;
 }
 
 footer {
-  padding: 50px 0px;
+	padding: 50px 0px;
 }
 
 .contact-form,
 .create-a-trip-form {
-  font-size: 12px;
-  text-transform: uppercase;
-  width: 100%;
-  font-family: GothamBold;
-  letter-spacing: 5px;
+	font-size: 12px;
+	text-transform: uppercase;
+	width: 100%;
+	font-family: GothamBold;
+	letter-spacing: 5px;
 }
 
 .contact_section, 
 .two_input_section {
-  display: inline-block;
-  width: 50%;
+	display: inline-block;
+	width: 50%;
 }
 
 .contact_section input,
 .two_input_section input {
-  width: calc(100% - 20px);
+	width: calc(100% - 20px);
 }
 
 .first_input {
-  width: calc(100% - 40px) !important;
+	width: calc(100% - 40px) !important;
 }
 
 .cr_input {
-  width: calc(100% - 40px) !important;
-  margin: 5px auto !important;
+	width: calc(100% - 40px) !important;
+	margin: 5px auto !important;
 }
 
 .cr_input_select {
-  width: calc(100% - 25px) !important;
+	width: calc(100% - 25px) !important;
 }
 
 .membership_select {
-  width: 250px;
-  margin: 0 auto;
-  display: block;
-  height: 40px !important;
-  padding-left: 10px;
-  font-size: 14px !important;
-  margin-top: 50px;
-  background-color: white;
+	width: 250px;
+	margin: 0 auto;
+	display: block;
+	height: 40px !important;
+	padding-left: 10px;
+	font-size: 14px !important;
+	margin-top: 50px;
+	background-color: white;
 }
 
 .stripe-btn-wrapper {
-  width: 120px;
-  margin: 0 auto;
-  margin-top: 30px;
+	width: 120px;
+	margin: 0 auto;
+	margin-top: 30px;
 }
 
 .sign-up-form input[type="submit"] {
-  background-color: #44b749;
-  color: white;
-  border: none;
-  width: 250px;
-  height: 50px !important;
-  text-transform: uppercase;
-  margin: 0 auto;
-  letter-spacing: 6px;
-  margin-top: 20px;
-  display: block;
-  cursor: pointer;
+	background-color: #44b749;
+	color: white;
+	border: none;
+	width: 250px;
+	height: 50px !important;
+	text-transform: uppercase;
+	margin: 0 auto;
+	letter-spacing: 6px;
+	margin-top: 20px;
+	display: block;
+	cursor: pointer;
 }
 
 .sign-up-form input[type="submit"]:hover {
-  color: #44b749;
-  background-color: white;
+	color: #44b749;
+	background-color: white;
 }
 
 .sign-up-errors {
-  text-align: center;
-  padding-bottom: 10px;
+	text-align: center;
+	padding-bottom: 10px;
 }
 
 input[name="name"] {
-  width: calc(100% - 20px);
+	width: calc(100% - 20px);
 }
 
 .name, .email, .phone, .message {
-  padding: 15px 0px;
+	padding: 15px 0px;
 }
 
 .contact-form input,
 .create-a-trip-form input,
 .create-a-trip-form select {
-  height: 30px;
-  border: 1px solid #343434;
+	height: 30px;
+	border: 1px solid #343434;
 }
 
 .contact-form textarea,
 .create-a-trip-form textarea
  {
-  width: calc(100% - 20px);
-  border: 1px solid #343434;
-  resize: none;
-  height: 150px;
+	width: calc(100% - 20px);
+	border: 1px solid #343434;
+	resize: none;
+	height: 150px;
 }
 
-.create-a-trip-form input[type="submit"] {
-  background-color: #343434;
-  color: white;
-  font-family: GothamBold;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  margin-top: 30px;
-  height: 50px;
-  width: 150px;
+.create-a-trip-form input[type="submit"],
+.contact-form input[type="submit"] {
+	background-color: #343434;
+	color: white;
+	font-family: GothamBold;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	margin-top: 30px;
+	height: 50px;
+	width: 150px;
+	border: none;
+	cursor: pointer;
 }
 
 
@@ -1016,107 +1019,108 @@ input[name="name"] {
 /* ----------------------------------------- */
 
 .faq-bg {
-  background: url('/outdoors/wp-content/uploads/faqbg.png') no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  width: 100%;
-  height: 650px;
-  position: relative;
-  top: 0;
-  z-index: -1;
+	background: url('/outdoors/wp-content/uploads/faqbg.png') no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	height: 650px;
+	position: relative;
+	top: 0;
+	z-index: -1;
 }
 
 .faq-title {
-  color: white;
-  font-family: PlayfairDisplay;
-  font-size: 60px;
-  text-align: center;
-  padding-top: 275px;
-  text-shadow: 2px 2px 4px black;
-  line-height: 70px;
+	color: white;
+	font-family: PlayfairDisplay;
+	font-size: 60px;
+	text-align: center;
+	padding-top: 275px;
+	text-shadow: 2px 2px 4px black;
+	line-height: 70px;
 }
 
 .faq-section-container {
-  width: 60%;
-  margin: 0 auto;
+	width: 60%;
+	margin: 0 auto;
 }
 
 .faq-header {
-  font-family: PlayfairDisplay;
-  font-size: 50px;
-  padding-top: 100px;
-  padding-bottom: 30px;
+	font-family: PlayfairDisplay;
+	font-size: 50px;
+	padding-top: 100px;
+	padding-bottom: 30px;
 }
 
 .question {
-  font-family: GothamBold;
-  letter-spacing: 10px;
-  line-height: 30px;
-  margin: 15px 0;
+	font-family: GothamBold;
+	letter-spacing: 10px;
+	line-height: 30px;
+	margin: 15px 0;
+	text-transform: uppercase;
 }
 
 .answer {
-  line-height: 20px;
-  margin-bottom: 50px;
+	line-height: 20px;
+	margin-bottom: 50px;
 }
 
 .faq-mtn {
-  width: 100%;
-  min-width: 1000px;
+	width: 100%;
+	min-width: 1000px;
 }
 
 .cta-holder {
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 100px;
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 100px;
 }
 
 .cta-left, .cta-right {
-  border: 2px solid #44b749;
-  width: 47.5%;
-  display: inline-block;
+	border: 2px solid #44b749;
+	width: 47.5%;
+	display: inline-block;
 }
 
 .cta-left {
-  margin-right: calc(5% - 8px);
+	margin-right: calc(5% - 8px);
 }
 
 .cta-email {
-  width: 100px;
-  margin: 0 auto;
-  margin-top: 50px;
-  display: block;
+	width: 100px;
+	margin: 0 auto;
+	margin-top: 50px;
+	display: block;
 }
 
 .cta-header {
-  text-align: center;
-  font-family: PlayfairDisplay;
-  font-size: 24px;
-  padding: 30px 0;
+	text-align: center;
+	font-family: PlayfairDisplay;
+	font-size: 24px;
+	padding: 30px 0;
 }
 
 .cta-text {
-  width: 70%;
-  line-height: 30px;
-  margin: 0 auto;
-  text-align: center;
-  margin-bottom: 30px;
+	width: 70%;
+	line-height: 30px;
+	margin: 0 auto;
+	text-align: center;
+	margin-bottom: 30px;
 }
 
 .cta-btn {
-  text-transform: uppercase;
-  color: white;
-  background-color: #44b749;
-  max-width: 275px;
-  margin: 0 auto;
-  height: 50px;
-  font-family: GothamBold;
-  letter-spacing: 6px;
-  line-height: 50px;
-  text-align: center;
-  margin-bottom: 50px;
+	text-transform: uppercase;
+	color: white;
+	background-color: #44b749;
+	max-width: 275px;
+	margin: 0 auto;
+	height: 50px;
+	font-family: GothamBold;
+	letter-spacing: 6px;
+	line-height: 50px;
+	text-align: center;
+	margin-bottom: 50px;
 }
 
 
@@ -1125,66 +1129,67 @@ input[name="name"] {
 /* ----------------------------------------- */
 
 .create-trip-bg {
-  background: url('/outdoors/wp-content/uploads/createtripbg.jpg') no-repeat center 20px;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  width: 100%;
-  height: 600px;
-  position: relative;
-  top: 0;
-  z-index: -1;
+	background: url('/outdoors/wp-content/uploads/createtripbg.jpg') no-repeat center 20px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	height: 600px;
+	position: relative;
+	top: 0;
+	z-index: -1;
 }
 
 .create-trip-bg h1 {
-  color: white;
-  font-size: 60px;
-  font-family: 'PlayfairDisplay';
-  text-shadow: 3px 3px 10px black;
-  line-height: 650px;
-  text-align: center;
+	color: white;
+	font-size: 60px;
+	font-family: 'PlayfairDisplay';
+	text-shadow: 3px 3px 10px black;
+	line-height: 650px;
+	text-align: center;
 }
 
 .form-logo {
-  display: block;
-  width: 70px;
-  margin: 0 auto;
-  padding: 50px 0;
+	display: block;
+	width: 70px;
+	margin: 0 auto;
+	padding: 50px 0;
 }
 
 .form-wrapper {
-  max-width: 700px;
-  margin: 0 auto;
+	max-width: 700px;
+	margin: 0 auto;
 }
 
 .create-a-trip-form {
-  margin: 0 10px;
+	margin: 0 10px;
 }
 
 .create-a-trip-form input,
 .create-a-trip-form textarea {
-  margin: 10px 0 20px 0;
-  border: 2px solid #343434;
-  padding-left: 5px;
-  font-size: 14px;
+	margin: 10px 0 20px 0;
+	border: 2px solid #343434;
+	padding-left: 5px;
+	font-size: 14px;
 }
 
 .title-input {
-  width: calc(100% - 20px);
+	width: calc(100% - 20px);
 }
 
 .create-a-trip-form input[type="submit"] {
-  display: block;
-  width: 200px;
-  margin: 0 auto;
-  margin-top: 30px;
-  cursor: pointer;
+	display: block;
+	width: 200px;
+	margin: 0 auto;
+	margin-top: 30px;
+	cursor: pointer;
 }
 
-.create-a-trip-form input[type="submit"]:hover {
-  background-color: #44b749;
-  border: 2px solid #44b749;
+.create-a-trip-form input[type="submit"]:hover,
+.contact-form input[type="submit"]:hover {
+	background-color: #44b749;
+	border: 2px solid #44b749;
 }
 
 
@@ -1195,186 +1200,187 @@ input[name="name"] {
 .page-id-155 .menu-external-menu-container,
 .page-id-137 .menu-external-menu-container,
 .page-id-261 .menu-external-menu-container,
-.page-id-151 .menu-external-menu-container {
-  display: none;
+.page-id-151 .menu-external-menu-container,
+.error404 .menu-external-menu-container {
+	display: none;
 }
 
 .trip-bg {
-  background: url('/outdoors/wp-content/uploads/faqbg.png') no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  width: 100%;
-  height: 500px;
-  position: relative;
-  top: 0;
-  z-index: -1;
+	background: url('/outdoors/wp-content/uploads/faqbg.png') no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	height: 500px;
+	position: relative;
+	top: 0;
+	z-index: -1;
 }
 
 .trip-container {
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 30px;
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 30px;
 }
 
 .trip-left-col {
-  width: 30%;
-  display: inline-block;
-  vertical-align: top;
+	width: 30%;
+	display: inline-block;
+	vertical-align: top;
 }
 
 .trip-right-col {
-  width: 69%;
-  display: inline-block;
-  vertical-align: top;
-  border: 2px solid black;
+	width: 69%;
+	display: inline-block;
+	vertical-align: top;
+	border: 2px solid black;
 }
 
 .join-trip, .leave-trip {
-  width: 90%;
-  text-transform: uppercase;
-  background-color: #44b749;
-  color: white;
-  text-align: center;
-  height: 50px;
-  line-height: 50px;
-  font-weight: bold;
-  letter-spacing: 6px;
-  margin-bottom: 30px;
-  cursor: pointer;
+	width: 90%;
+	text-transform: uppercase;
+	background-color: #44b749;
+	color: white;
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	font-weight: bold;
+	letter-spacing: 6px;
+	margin-bottom: 30px;
+	cursor: pointer;
 }
 
 .leave-trip {
-  background-color: #b73c3c;
+	background-color: #b73c3c;
 }
 
 .leader-email {
-  margin-left: 30px;
-  font-size: 12px;
-  display: block;
-  margin-top: 10px;
-  margin-bottom: 30px;
+	margin-left: 30px;
+	font-size: 12px;
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 30px;
 }
 
 .join-trip:hover,
 .leave-trip:hover {
-  background-color: white;
-  color: #44b749;
-  height: 46px;
-  line-height: 46px;
-  width: calc(90% - 4px);
-  border: 2px solid #44b749;
+	background-color: white;
+	color: #44b749;
+	height: 46px;
+	line-height: 46px;
+	width: calc(90% - 4px);
+	border: 2px solid #44b749;
 }
 
 .leave-trip:hover {
-  color: #b73c3c;
-  border: 2px solid #b73c3c;
+	color: #b73c3c;
+	border: 2px solid #b73c3c;
 }
 
 .trip-details {
-  border: 2px solid black;
-  width: 90%;
+	border: 2px solid black;
+	width: 90%;
 }
 
 .trip-leader {
-  border: 2px solid black;
-  width: 90%;
-  margin-top: 30px;
+	border: 2px solid black;
+	width: 90%;
+	margin-top: 30px;
 }
 
 .trip-detail-title {
-  text-transform: uppercase;
-  letter-spacing: 6px;
-  font-weight: bold;
-  padding: 30px 30px 15px 30px;
-  font-family: GothamBold;
+	text-transform: uppercase;
+	letter-spacing: 6px;
+	font-weight: bold;
+	padding: 30px 30px 15px 30px;
+	font-family: GothamBold;
 }
 
 .trip-detail-title-main {
-  text-transform: uppercase;
-  letter-spacing: 6px;
-  font-weight: bold;
-  padding: 30px;
-  font-family: GothamBold;
+	text-transform: uppercase;
+	letter-spacing: 6px;
+	font-weight: bold;
+	padding: 30px;
+	font-family: GothamBold;
 }
 
 .trip-detail {
-  padding: 0 30px 0 30px;
-  line-height: 25px;
+	padding: 0 30px 0 30px;
+	line-height: 25px;
 }
 
 .trip-detail:last-child {
-  padding-bottom: 30px;
+	padding-bottom: 30px;
 }
 
 .contact-trip-leader {
-  border: 2px solid #44b749;
-  width: 80%;
-  font-family: GothamBold;
-  color: #44b749;
-  margin: 0 auto;
-  margin-top: 15px;
-  margin-bottom: 30px;
-  padding: 10px 0;
-  text-align: center;
+	border: 2px solid #44b749;
+	width: 80%;
+	font-family: GothamBold;
+	color: #44b749;
+	margin: 0 auto;
+	margin-top: 15px;
+	margin-bottom: 30px;
+	padding: 10px 0;
+	text-align: center;
 }
 
 .contact-trip-leader:hover {
-  background-color: #44b749;
-  color: white;
-  cursor: pointer;
+	background-color: #44b749;
+	color: white;
+	cursor: pointer;
 }
 
 .trip-overview {
-  padding: 0 30px;
-  line-height: 25px;
-  margin-bottom: 30px;
+	padding: 0 30px;
+	line-height: 25px;
+	margin-bottom: 30px;
 }
 
 .trip-attendees {
-  border: 2px solid black;
-  margin-top: 30px;
+	border: 2px solid black;
+	margin-top: 30px;
 }
 
 table {
-  margin: 0 30px 30px 30px;
+	margin: 0 30px 60px 30px;
 }
 
 table th {
-  text-align: left;
-  font-family: GothamBold;
-  padding-bottom: 20px;
+	text-align: left;
+	font-family: GothamBold;
+	padding-bottom: 20px;
 }
 
 table td {
-  padding: 5px 0;
+	padding: 5px 0;
 }
 
 .trip-col-container {
-  display: flex;
+	display: flex;
 }
 
 
 .upcoming-trips-bg {
-  background: url('/outdoors/wp-content/uploads/13988107_10209049168179441_4985269252835363743_o-2.jpg') no-repeat center -100px;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  width: 100%;
-  height: 500px;
-  min-height: 500px;
-  position: relative;
-  top: 0;
-  z-index: -1;
+	background: url('/outdoors/wp-content/uploads/13988107_10209049168179441_4985269252835363743_o-2.jpg') no-repeat center -100px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	height: 500px;
+	min-height: 500px;
+	position: relative;
+	top: 0;
+	z-index: -1;
 }
 
 .trips-container {
-  width: 80%;
-  margin: 0 auto;
-  margin-top: 30px;
-  font-size: 0;
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 30px;
+	font-size: 0;
 }
 
 
@@ -1383,34 +1389,34 @@ table td {
 /* ----------------------------------------- */
 
 .profile-bg {
-  background: url('/outdoors/wp-content/uploads/profile-bg.png') no-repeat center -50px;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  width: 100%;
-  height: 600px;
-  position: relative;
-  top: 0;
-  z-index: -1;
+	background: url('/outdoors/wp-content/uploads/profile-bg.png') no-repeat center -50px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	height: 600px;
+	position: relative;
+	top: 0;
+	z-index: -1;
 }
 
 .profile-bg h1 {
-  color: white;
-  font-size: 60px;
-  font-family: 'PlayfairDisplay';
-  text-shadow: 3px 3px 10px black;
-  text-align: center;
+	color: white;
+	font-size: 60px;
+	font-family: 'PlayfairDisplay';
+	text-shadow: 3px 3px 10px black;
+	text-align: center;
 }
 
 .circle-img {
-  border-radius: 50%;
-  margin: 0 auto;
-  display: block;
+	border-radius: 50%;
+	margin: 0 auto;
+	display: block;
 }
 
 .prof-img {
-  padding-top: 250px;
+	padding-top: 250px;
 }
 
 
@@ -1420,17 +1426,17 @@ table td {
 /* REPORTS */
 
 .reports-bg {
-  background: url('/outdoors/wp-content/uploads/reports.png') no-repeat center -10px;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  width: 100%;
-  height: 500px;
-  min-height: 500px;
-  position: relative;
-  top: 0;
-  z-index: -1;
+	background: url('/outdoors/wp-content/uploads/reports.png') no-repeat center -10px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	height: 500px;
+	min-height: 500px;
+	position: relative;
+	top: 0;
+	z-index: -1;
 }
 
 
@@ -1439,17 +1445,17 @@ table td {
 /* MEMBER RESOURCES */
 
 .member-resources-bg {
-  background: url('/outdoors/wp-content/uploads/member-resources-bg.png') no-repeat center -10px;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  width: 100%;
-  height: 550px;
-  min-height: 500px;
-  position: relative;
-  top: 0;
-  z-index: -1;
+	background: url('/outdoors/wp-content/uploads/member-resources-bg.png') no-repeat center -10px;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	height: 550px;
+	min-height: 500px;
+	position: relative;
+	top: 0;
+	z-index: -1;
 }
 
 
@@ -1458,17 +1464,269 @@ table td {
 /* MEMBERSHIP DUES */
 
 .membership-dues {
-  color: white;
-  font-family: GothamBold;
-  text-transform: uppercase;
-  text-align: center;
-  letter-spacing: 6px;
-  font-size: 16px;
-  text-shadow: 1px 1px 3px black;
-  padding: 250px 30px 0 30px;
+	color: white;
+	font-family: GothamBold;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 6px;
+	font-size: 16px;
+	text-shadow: 1px 1px 3px black;
+	padding: 250px 30px 0 30px;
 }
 
 
+
+#loginform input {
+	width: 50%;
+	margin: 0 auto;
+	display: block;
+	height: 40px;
+	margin-top: 20px;
+	border: 1px solid black;
+	font-size: 14px;
+	padding-left: 5px;
+}
+
+#loginform input[type='submit'],
+.sign-waiver-btn{
+	background-color: #44b749;
+	color: white;
+	font-family: GothamBook;
+	text-transform: uppercase;
+	border: none;
+	font-size: 14px;
+	letter-spacing: 6px;
+	cursor: pointer;
+}
+
+.sign-waiver-btn {
+	width: 300px;
+	margin: 0 auto;
+	height: 40px;
+	text-align: center;
+	font-family: GothamBold;
+	text-decoration: none;
+	margin-top: 30px;
+}
+
+.sign-waiver-btn a {
+	text-decoration: none;
+	color: white;
+	line-height: 40px;
+}
+
+.sign-waiver-btn a:hover {
+	color: #44b749;
+}
+
+#loginform input[type='submit']:hover,
+.sign-waiver-btn:hover {
+	background-color: white;
+	color: #44b749;
+}
+
+.lost-password {
+	width: 50%;
+	margin: 0 auto;
+	display: block;
+	color: white;
+	font-family: GothamBold;
+	margin-top: 15px;
+}
+
+.waiver-text {
+	color: white;
+	font-family: GothamBook;
+	max-width: 500px;
+	margin: 0 auto;
+	margin-top: 20px;
+	text-align: center;
+}
+
+.reports-container {
+	width: 70%;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+
+.report_input{
+	margin-top: 30px;
+	width: 300px;
+	display: inline-block;
+	border: 1px solid black;
+	height: 30px;
+	margin-right: 10px;
+}
+
+.trips-led-by-member-form input[type='submit']{
+	color: white;
+	background-color: #44b749;
+	height: 34px;
+	width: 200px;
+	text-transform: uppercase;
+	letter-spacing: 6px;
+	border: none;
+	cursor: pointer;
+	font-size: 14px;
+}
+
+.not-found-bg {
+	background: url('/outdoors/wp-content/uploads/forest.jpeg') no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	top: 0;
+}
+
+.not-found-bg h1 {
+	color: white;
+	font-size: 60px;
+	font-family: 'GothamBold';
+	text-shadow: 3px 3px 10px black;
+	padding-top: 350px;
+	text-align: center;
+}
+
+.not-found-bg h3 {
+	color: white;
+	font-size: 24px;
+	font-family: 'GothamBold';
+	text-shadow: 3px 3px 10px black;
+	text-align: center;
+	padding-top: 20px;
+}
+
+.view-past-trips {
+	width: 300px;
+	height: 50px;
+	background-color: #343434;
+	font-size: 12px;
+	line-height: 50px;
+	text-align: center;
+	color: white;
+	font-family: 'GothamBold';
+	letter-spacing: 6px;
+	text-transform: uppercase;
+}
+
+a {
+	text-decoration: none;
+}
+
+.view-past-trips:hover {
+	background-color: #44b749;
+}
+
+.past-trips-container {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.trip-questions {
+	font-family: 'GothamBold';
+	text-transform: uppercase;
+	letter-spacing: 6px;
+	margin: 30px 0;
+}
+
+.trip-question {
+	display: inline-block;
+	width: 90%;
+	vertical-align: top;
+}
+
+.common-qs {
+	margin-top: 15px;
+	font-family: 'GothamBook';
+	letter-spacing: normal;
+	text-transform: none;
+	font-size: 14px;
+	margin-bottom: 30px;
+}
+
+.common-qs-header {
+	font-family: 'GothamBold';
+}
+
+.common-qs p {
+	margin: 10px 0;
+}
+
+.plus-btn {
+	display: inline-block;
+	vertical-align: top;
+	width: 5%;
+	height: 30px;
+	text-align: center;
+	font-size: 30px;
+	margin: 10px 0 20px 10px;
+	padding: 1px;
+	color: #44b749;
+	cursor: pointer;
+}
+
+.minus-btn {
+	display: inline-block;
+	vertical-align: top;
+	width: 5%;
+	height: 30px;
+	text-align: center;
+	font-size: 30px;
+	margin: 10px 0 20px 10px;
+	padding: 1px;
+	color: #b73c3c;
+	cursor: pointer;
+}
+
+.join-trip-form {
+	padding: 0 100px 50px 100px;
+	font-size: 14px;
+}
+
+.join-trip-questions {
+	font-family: 'GothamBold';
+	text-transform: uppercase;
+	letter-spacing: 6px;
+	line-height: 20px;
+	margin: 30px 0;
+	font-size: 12px;
+	padding: 50px 100px 0 100px;
+}
+
+.input-title {
+	padding-bottom: 10px;
+}
+
+.join-trip-answer {
+	margin-bottom: 10px;
+	border: 2px solid black;
+	width: 90%;
+	height: 30px;
+	padding-left: 5px;
+	font-size: 14px;
+}
+
+.join {
+	width: calc(90% + 8px);
+	padding-left: 5px;
+	text-transform: uppercase;
+	background-color: #44b749;
+	color: white;
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	font-weight: bold;
+	letter-spacing: 6px;
+	margin: 30px 0;
+	cursor: pointer;
+	border: none;
+	font-size: 14px;
+}
 
 
 

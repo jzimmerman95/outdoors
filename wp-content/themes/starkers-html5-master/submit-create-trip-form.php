@@ -3,7 +3,7 @@
 	global $wpdb;
 
 	$wpdb->show_errors();
-	$current_time = date("Y-m-d h:i:sa");
+	$current_time = date("Y-m-d h:i:s");
 	$current_user = wp_get_current_user()->ID;
 
 	if ( isset( $_POST ) ){
@@ -35,8 +35,10 @@
 			'c_departure' => $depart,
 		), array( '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s' ));
 
-		$wp_posts = 'wp_posts';
+		$results = $wpdb->get_results("SELECT c_uid FROM m_adventure WHERE c_created_date='" . $current_time . "'");
+		$adventure_id = $results[0]->c_uid;
 
+		$wp_posts = 'wp_posts';
 		$post_name = strtolower(preg_replace('/[^a-zA-Z0-9-_\.]/','', preg_replace("/[\s_]/", "-", $trip_title)));
 
 		$wpdb->insert($wp_posts, array(
@@ -46,31 +48,45 @@
 			'post_type' => 'trip',
 			'post_name' => $post_name,
 		), array( '%s', '%s', '%s', '%s' ));
+
+		$results = $wpdb->get_results("SELECT ID FROM wp_posts WHERE post_date='" . $current_time . "'");
+
+		$trip_id = $results[0]->ID;
+		$signup = strtotime($signup_date);
+		$end = strtotime($end_date);
+		$start = strtotime($start_date);
+		$trip_cat = sanitize_text_field($_POST['trip_category']);
+
+		$query = "INSERT INTO wp_postmeta (post_id, meta_key, meta_value) VALUES 
+			($trip_id, 'wpcf-trip-overview', '" . $trip_overview . "'),
+			($trip_id, 'wpcf-max-attendees', '" . $max_attendees . "'),
+			($trip_id, 'wpcf-fee', '" . $fee . "'),
+			($trip_id, 'wpcf-sign-up-by', $signup),
+			($trip_id, 'wpcf-end-date', $end),
+			($trip_id, 'wpcf-start-date', $start),
+			($trip_id, 'wpcf-depart-from', '" . $depart . "'),
+			($trip_id, 'wpcf-trip-location', '" . $location . "'),
+			($trip_id, 'wpcf-trip-title', '" . $trip_title . "'),
+			($trip_id, 'wpcf-trip-category', '" . $trip_cat . "')";
+
+		$wpdb->query($query);
+
+		$questions_query = "INSERT INTO m_question (c_owner, c_creator, c_created_date, c_last_modified, c_adventure, c_type, c_text) VALUES ";
+
+		$comma = false;
+		$questions = $_POST['question'];
+		
+		foreach($questions as $key => $question){
+			if ($comma){
+				$questions_query = $questions_query . ", ";
+			}
+			$questions_query = $questions_query . "($current_user, $current_user, '" . $current_time . "', '" . $current_time . "', $adventure_id, 'text', '" . $question . "')";
+			$comma = true;
+		}
+
+		$wpdb->query($questions_query);
+
+		wp_redirect( home_url() . "/index.php/trip/" . $post_name );
+		exit;
 	}
-
-	$results = $wpdb->get_results("SELECT ID FROM wp_posts WHERE post_date='" . $current_time . "'");
-
-	$trip_id = $results[0]->ID;
-	$signup = strtotime($signup_date);
-	$end = strtotime($end_date);
-	$start = strtotime($start_date);
-	$trip_cat = sanitize_text_field($_POST['trip_category']);
-
-	$query = "INSERT INTO wp_postmeta (post_id, meta_key, meta_value) VALUES 
-		($trip_id, 'wpcf-trip-overview', '" . $trip_overview . "'),
-		($trip_id, 'wpcf-max-attendees', '" . $max_attendees . "'),
-		($trip_id, 'wpcf-fee', '" . $fee . "'),
-		($trip_id, 'wpcf-sign-up-by', $signup),
-		($trip_id, 'wpcf-end-date', $end),
-		($trip_id, 'wpcf-start-date', $start),
-		($trip_id, 'wpcf-depart-from', '" . $depart . "'),
-		($trip_id, 'wpcf-trip-location', '" . $location . "'),
-		($trip_id, 'wpcf-trip-title', '" . $trip_title . "'),
-		($trip_id, 'wpcf-trip-category', '" . $trip_cat . "')";
-
-	$wpdb->query($query);
-
-	wp_redirect( home_url() . "/index.php/trip/" . $post_name );
-	exit;
-
 ?>

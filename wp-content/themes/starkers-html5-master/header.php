@@ -30,9 +30,12 @@
     ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.0/css/iziModal.min.css">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
- 
+
 <script src="<?php bloginfo('template_directory'); ?>/js/modernizr-1.6.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.0/js/iziModal.min.js" type="text/javascript"></script>
  
 <?php
     /* We add some JavaScript to pages with the comment form

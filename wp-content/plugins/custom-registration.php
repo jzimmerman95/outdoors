@@ -32,7 +32,7 @@ function cr(&$fields, &$errors) {
 
       insert_user_meta($user_id, $fields);
 
-      wp_redirect(home_url() . "/sign-in/");
+      wp_redirect(home_url() . "/payment/");
       exit;
       
       // Clear field data
@@ -86,14 +86,14 @@ function cr_display_form($fields = array(), $errors = null) {
       </li><?php
     }
     ?></ul></div><?php
-  }
-  
-  // Disaply form
-  
-  ?>
+  } else {?>
+    <div class="form-holder">
+      <form class="sign-up-form" method="post" action="<?php $_SERVER['REQUEST_URI'] ?>">
 
-    
-        <div class="two_input_section">
+  <?php
+  }?>
+  
+  <div class="two_input_section">
           <input class="cr_input" type="text" placeholder="First Name" name="first_name" value="<?php echo (isset($fields['first_name']) ? $fields['first_name'] : '') ?>" required><br>
         </div><div class="two_input_section">
           <input class="cr_input" type="text" name="last_name" placeholder="Last Name" value="<?php echo (isset($fields['last_name']) ? $fields['last_name'] : '') ?>" required><br>
@@ -120,6 +120,9 @@ function cr_display_form($fields = array(), $errors = null) {
         <input class="sign-up-submit" type="submit" name="submit" value="Sign Up">
       </form>
     </div>
+
+    
+        
 
     <?php
 }

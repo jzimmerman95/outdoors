@@ -13,7 +13,7 @@ get_header();
 <div class="sign-up-bg">
   <div class="membership-dues">Membership Dues</div>
   <form action="/outdoors/payment/" method="POST">
-    <select class="membership_select">
+    <select id="value" class="membership_select">
       <option value="" disabled selected>Select Membership</option>
       <option value="3000">5 Months for $30</option>
       <option value="5000">12 Months for $50</option>
@@ -22,7 +22,7 @@ get_header();
       <script
         src="https://checkout.stripe.com/checkout.js" class="stripe-button"
         data-key="pk_test_8RqSpTYU4rKfwfPPuk8GR8UQ"
-        data-amount="999"
+        data-amount=""
         data-name="Demo Site"
         data-zip-code="true"
         data-description="Widget"
@@ -58,29 +58,16 @@ get_header();
         $timestamp = time();
         update_user_meta( $user_id, 'user_paid', $timestamp);
         update_user_meta( $user_id, 'stripe_id', $customer->id);
-        $redirect_url = home_url() . '/upcoming-trips';
+        $redirect_url = home_url() . '/hellosign';
         wp_redirect($redirect_url);
         exit;
     }
   }
   else {
     $has_paid = get_user_meta($current_user->id, 'user_paid', true);
-    echo json_encode($has_paid);
+    // echo json_encode($has_paid);
     if($has_paid) {
       echo 'test paid';
-    }else {
-      echo "<form action='/outdoors/index.php/sign-up/payment/' method='POST'>
-        <script
-          src='https://checkout.stripe.com/checkout.js' class='stripe-button'
-          data-key='pk_test_8RqSpTYU4rKfwfPPuk8GR8UQ'
-          data-amount='999'
-          data-name='Demo Site'
-          data-zip-code='true'
-          data-description='Widget'
-          data-image='https://stripe.com/img/documentation/checkout/marketplace.png'
-          data-locale='auto'>
-        </script>
-      </form>";
     }
   }
   ?>
