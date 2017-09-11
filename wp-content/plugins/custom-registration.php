@@ -110,6 +110,7 @@ function cr_display_form($fields = array(), $errors = null) {
             <option value="" disabled selected>Gender</option>
             <option value="female">Female</option>
             <option value="male">Male</option>
+            <option value="other">Prefer not to say</option>
           </select><br>
         </div>
         <div class="two_input_section">
