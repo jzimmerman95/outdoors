@@ -1,31 +1,9 @@
-<?php
-/**
- * The loop that displays a single post.
- *
- * @package WordPress
- * @subpackage Starkers
- * @since Starkers HTML5 3.2
- */
-
-global $wp;
-
+<?php get_template_part("content", "nav"); 
 if ( !is_user_logged_in() ) {
 	wp_redirect( home_url());
 	exit;
 }
 ?>
-
-<nav class="menu-internal-menu-container">
-	<ul id="menu-internal-menu" class="menu">
-		<li id="menu-item-140" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-140"><a href="/outdoors/" class="menu-image-title-hide menu-image-not-hovered"><span class="menu-image-title">Home</span><img width="300" height="236" src="/outdoors/wp-content/uploads/greenodclogo-300x236.png" class="menu-image menu-image-title-hide" alt="" srcset="/outdoors/wp-content/uploads/greenodclogo-300x236.png 300w, /outdoors/wp-content/uploads/greenodclogo-768x605.png 768w, /outdoors/wp-content/uploads/greenodclogo-1024x806.png 1024w, /outdoors/wp-content/uploads/greenodclogo-24x19.png 24w, /outdoors/wp-content/uploads/greenodclogo-36x28.png 36w, /outdoors/wp-content/uploads/greenodclogo-48x38.png 48w, /outdoors/wp-content/uploads/greenodclogo.png 1529w" sizes="(max-width: 300px) 100vw, 300px"></a></li>
-		<li id="menu-item-160" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-160"><a href="https://docs.google.com/spreadsheets/d/1Nzo6CtUZ9BhCNoYK61mex-eC4d5pXhmLTUdLJHdozpg/edit?usp=sharing" class="menu-image-title-after"><span class="menu-image-title">Gear Room</span></a></li>
-		<li id="menu-item-159" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-159"><a href="/outdoors/reports/" class="menu-image-title-after"><span class="menu-image-title">Reports</span></a></li>
-		<li id="menu-item-158" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-158"><a href="/outdoors/member-resources/" class="menu-image-title-after"><span class="menu-image-title">Member Resources</span></a></li>
-		<li id="menu-item-157" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-157"><a href="/outdoors/upcoming-trips/" class="menu-image-title-after"><span class="menu-image-title">Upcoming Trips</span></a></li>
-		<li id="menu-item-139" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-137 current_page_item menu-item-139"><a href="/outdoors/create-a-trip/" class="menu-image-title-after"><span class="menu-image-title">Create a Trip</span></a></li>
-		<li id="menu-item-263" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-263"><a href="/outdoors/profile/" class="menu-image-title-after"><span class="menu-image-title">Profile</span></a></li>
-	</ul>
-</nav>
 
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); 
 	
@@ -43,7 +21,7 @@ if ( !is_user_logged_in() ) {
 
 <div id="modal">
 	<div class="join-trip-questions">Please answer the following questions to join the trip:</div>
-	<form class="join-trip-form" name="join-trip" method="post" action="/outdoors/wp-content/themes/starkers-html5-master/submit-join-trip-form.php">
+	<form class="join-trip-form" id="join-trip-form" name="join-trip" method="post" action="/outdoors/wp-content/themes/starkers-html5-master/submit-join-trip-form.php">
 		<input type="text" style="display: none;" value="<?php echo $adventure_id; ?>" name="adventure_id">
 		<input type="text" style="display: none;" value="<?php echo $max_attendees; ?>" name="max_attendees">
 		<input type="text" style="display: none;" value="<?php echo types_render_field( "trip-title", array()); ?>" name="post_title">
@@ -51,8 +29,8 @@ if ( !is_user_logged_in() ) {
 		<?php for ($x = 0; $x < sizeof($questions); $x++): 
 			$id = $questions[$x]->c_uid;
 			$question = $questions[$x]->c_text; ?>
-			<div class="input-title"><?php echo $question; ?></div>
-			<input type="text" name="answer[<?php echo $c_uid; ?>]" class="join-trip-answer" required />
+			<div class="input-title-q"><?php echo $question; ?></div>
+			<input type="text" name="answer[<?php echo $id; ?>]" class="join-trip-answer" required />
 		<?php endfor; ?>
 		<input class="join" type="submit" value="+ Join Trip">
 	</form>
@@ -74,9 +52,12 @@ if ( !is_user_logged_in() ) {
 		<div class="trip-col-container">
 			<div class="trip-left-col">
 
-				<?php if ($count == 0): ?>
-					<div class="join-trip trigger">+ Join Trip</div> 
+				<?php
+				if ($count == 0 && $questions[0]->c_text) : ?>
+					<div class="join-trip trigger">+ Join Trip</div>
 
+				<?php elseif ($count == 0 && !$questions[0]->c_text): ?>
+					<div class="join-trip" onclick="submitJoinForm()">+ Join Trip</div>
 
 				<?php else: ?>
 					<form name="leave-trip" method="post" action="/outdoors/wp-content/themes/starkers-html5-master/submit-leave-trip-form.php">
@@ -154,6 +135,14 @@ if ( !is_user_logged_in() ) {
 				<?php endforeach; ?>
 
 			</table>
+
+			<?php if (get_the_author_meta( 'ID' ) == $user_id && $questions[0]->c_text): ?>
+				<div class="view-qs-space"></div>
+				<?php $redirect_to = esc_url( add_query_arg( 'adventure', $adventure_id, home_url() . "/qa" )); ?>
+				<a href="<?php echo $redirect_to; ?>"><div class="view-qs">View Q&A</div></a>
+			<?php else: ?>
+				<div class="view-qs" style="cursor: default;">No Q&A</div>
+			<?php endif; ?>
 		</div>
 	</div>
 
@@ -166,6 +155,10 @@ $(document).on('click', '.trigger', function (event) {
     event.preventDefault();
     $('#modal').iziModal('open');
 });
+
+function submitJoinForm(){
+	document.getElementById('join-trip-form').submit();
+}
 </script>
 
 

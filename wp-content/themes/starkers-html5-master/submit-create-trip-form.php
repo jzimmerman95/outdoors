@@ -71,20 +71,23 @@
 
 		$wpdb->query($query);
 
-		$questions_query = "INSERT INTO m_question (c_owner, c_creator, c_created_date, c_last_modified, c_adventure, c_type, c_text) VALUES ";
-
-		$comma = false;
 		$questions = $_POST['question'];
-		
-		foreach($questions as $key => $question){
-			if ($comma){
-				$questions_query = $questions_query . ", ";
-			}
-			$questions_query = $questions_query . "($current_user, $current_user, '" . $current_time . "', '" . $current_time . "', $adventure_id, 'text', '" . $question . "')";
-			$comma = true;
-		}
 
-		$wpdb->query($questions_query);
+		if ($questions[0]->c_text){
+			$questions_query = "INSERT INTO m_question (c_owner, c_creator, c_created_date, c_last_modified, c_adventure, c_type, c_text) VALUES ";
+
+			$comma = false;
+			
+			foreach($questions as $key => $question){
+				if ($comma){
+					$questions_query = $questions_query . ", ";
+				}
+				$questions_query = $questions_query . "($current_user, $current_user, '" . $current_time . "', '" . $current_time . "', $adventure_id, 'text', '" . $question . "')";
+				$comma = true;
+			}
+
+			$wpdb->query($questions_query);
+		}
 
 		wp_redirect( home_url() . "/index.php/trip/" . $post_name );
 		exit;

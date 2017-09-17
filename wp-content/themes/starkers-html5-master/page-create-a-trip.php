@@ -97,7 +97,7 @@ if ( !is_user_logged_in() || !(current_user_can('administrator') || current_user
 		<div class="questions-holder" id="questions-holder"></div>
 
 		<input type="submit" value="Create Trip">
-  	</form>
+		</form>
 </div>
 
 <link rel="stylesheet" href="https://unpkg.com/flatpickr/dist/flatpickr.min.css">
@@ -117,7 +117,7 @@ if ( !is_user_logged_in() || !(current_user_can('administrator') || current_user
 	var index = 1;
 	var lastIndex = 1;
 
-	$('.questions-holder').append('<span id="question-' + index + '"><div class="input-title">Question</div><input type="text" name="question[]" class="trip-question" required><div class="plus-btn" id="plus-btn-' + index + '" onclick="addQuestionField(index++)"> +</div></span>');
+	$('.questions-holder').append('<span id="question-' + index + '"><div class="input-title">Question</div><input type="text" name="question[]" class="trip-question"><div class="plus-btn" id="plus-btn-' + index + '" onclick="addQuestionField(index++)"> +</div></span>');
 
 	index++;
 
@@ -127,7 +127,7 @@ if ( !is_user_logged_in() || !(current_user_can('administrator') || current_user
 		document.getElementById('plus-btn-' + lastIndex + '').style.display = 'none';
 
 		$('.questions-holder').append('<div class="minus-btn" id="minus-btn-' + lastIndex + '" onclick="removeQuestionField(lastIndex)"> -</div>');
-		$('.questions-holder').append('<span id="question-' + index + '"><div class="input-title">Question</div><input type="text" name="question[]" class="trip-question" required><div class="plus-btn" id="plus-btn-' + index + '" onclick="addQuestionField(index++)"> +</div></span>');
+		$('.questions-holder').append('<span id="question-' + index + '"><div class="input-title">Question</div><input type="text" name="question[]" class="trip-question"><div class="plus-btn" id="plus-btn-' + index + '" onclick="addQuestionField(index++)"> +</div></span>');
 	}
 
 	function removeQuestionField(index){

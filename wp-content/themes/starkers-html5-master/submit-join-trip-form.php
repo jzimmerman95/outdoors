@@ -43,6 +43,23 @@
 			), array( '%s', '%s', '%s', '%s', '%s', '%s', '%s'));
 		}
 
+		$attendee_id = $wpdb->get_results("SELECT c_uid FROM m_attendee WHERE c_adventure='" . $adventure_id . "' AND c_created_date='" . $current_time . "'")[0]->c_uid;
+
+		$answers_query = "INSERT INTO m_answer (c_owner, c_creator, c_created_date, c_last_modified, c_question, c_attendee, c_answer_text) VALUES ";
+
+		$comma = false;
+		$answers = $_POST['answer'];
+		
+		foreach($answers as $q_id => $answer){
+			if ($comma){
+				$answers_query = $answers_query . ", ";
+			}
+			$answers_query = $answers_query . "($user_id, $user_id, '" . $current_time . "', '" . $current_time . "', $q_id, $attendee_id, '" . $answer . "')";
+			$comma = true;
+		}
+
+		$wpdb->query($answers_query);
+
 		wp_redirect( home_url() . "/index.php/trip/" . $post_title );
 		exit;
 	}
